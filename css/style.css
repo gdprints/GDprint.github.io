@@ -1023,7 +1023,8 @@ select.selectmenu {
 /* --- contact form  ---- */
 
 .contactForm input[type="text"],
-.contactForm input[type="email"] {
+.contactForm input[type="email"],
+.contactForm input[type="tel"]{
     width: 100%;
     min-height: 40px;
     padding-left: 20px;
