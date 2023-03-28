@@ -3114,7 +3114,7 @@ select {
     color: #fff;
     border-radius: 5px;
     margin: 25px 0;
-    background-color: #4070f4;
+    background-color: goldenrod;
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -3125,7 +3125,7 @@ select {
 }
 
 form button:hover {
-    background-color: #265df2;
+    background-color: gold;
 }
 
 form button i,
