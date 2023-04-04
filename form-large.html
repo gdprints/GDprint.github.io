@@ -127,7 +127,8 @@
             <div class="inner-heading">
                    <div class="buttons-container">
                         <button id="save">Պահպանել</button>
-                        <button onclick="print" id="print">Տպել</button>
+                       <button onclick="print" id="print">Տպել</button>
+                      
                     </div>
             </div>
           </div>
@@ -141,7 +142,7 @@
 
        <a id="save_to_image">
         <h3>Լայնաֆորմատ Տպագրություն</h3>
-        <form action="#">
+        <form action="https://formspree.io/f/xwkjranv" method="POST">
            
             <div class="form first">
                 <div class="details personal">
@@ -150,17 +151,17 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Անուն</label>
-                            <input type="text" placeholder="Անուն" required>
+                            <input name="Last name" type="text" placeholder="Անուն" required>
                         </div>
 
                         <div class="input-field">
                             <label>Ազգանուն</label>
-                            <input type="text" placeholder="Ազգանուն" required>
+                            <input name="First name" type="text" placeholder="Ազգանուն" required>
                         </div>
 
                         <div class="input-field">
                             <label>Հեռ. համար</label>
-                            <input type="tel" placeholder="095818921" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+                            <input name="tel" type="tel" placeholder="095818921" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
                         </div>
 
                         <div class="input-field">
@@ -168,38 +169,43 @@
                             <input type="email" placeholder="Էլ հասցե" required>
                         </div>
                         
-                        <div class="input-field">
+                        <div name="select" class="input-field">
                             <label>Ընտրել նյութ</label>
-                            <select class="select" required >
-                               <option id="padding" value="Ընտրել նյութը">Banner</option>
-                               <option id="padding" value="">Banner+օղակ</option>
-                               <option id="padding" value="">Samokley</option>
-                               <option id="padding" value="">Setka Samokley</option>
+                            <select name="select" class="select" required >
+                               <option name="select" id="padding" value="Banner">Banner</option>
+                               <option name="select" id="padding" value="Banner+ողակ">Banner+ողակ</option>
+                               <option name="select" id="padding" value="Samokley">Samokley</option>
+                               <option name="select" id="padding" value="Setka Samokley">Setka Samokley</option>
                             </select>
                         </div>
                         
                         <div class="input-field">
-                            <label>Երկարություն  &#40;մմ-ով&#41; &#42;</label>
-                            <input type="tel" required placeholder="Երկարություն  &#40;մմ-ով&#41;">
+                            <label>Երկարություն</label>
+                            <input name="length:" type="text" placeholder="Երկարություն" required>
                         </div>
                         
                         <div class="input-field">
-                            <label>Լայնություն  &#40;մմ-ով&#41; &#42;</label>
-                            <input type="tel" required placeholder="Լայնություն  &#40;մմ-ով&#41;">
+                            <label>Լայնություն</label>
+                            <input name="width:" type="text" placeholder="Լայնություն" required>
                         </div>
                         
                         
-                         <div class="input-field">
+                         <div name="select" class="input-field">
                             <label>Ընտրել ծածկագիր</label>
-                            <select class="select" required >
-                               <option id="padding" value="Ընտրել ծածկագիր">ARM KGJ1988</option>
-                               <option id="padding" value="">RUS-WZX3976</option>
-                               <option id="padding" value="">UKR-VPW7952</option>
-                               <option id="padding" value="">USA-KGJ9928</option>
+                            <select name="select" class="select" required >
+                               <option id="padding" value="ARM KGJ1988">ARM KGJ1988</option>
+                               <option id="padding" value="RUS-WZX3976">RUS-WZX3976</option>
+                               <option id="padding" value="UKR-VPW7952">UKR-VPW7952</option>
+                               <option id="padding" value="USA-KGJ9928">USA-KGJ9928</option>
                             </select>
                         </div>
-                        
+                        <div class="input-field">
+                        <label>Պատվերի բնութագիր</label>
+                        <textarea name="message" cols="150" rows="10" placeholder="Պատվերի բնութագիր"></textarea>
+                        </div>
+                        <button id="save" class="btn btn-theme btn-medium margintop10" type="submit">Ուղարկել</button>
                     </div>
+                    
                     <div class="buttons-container">
                        
                     </div>
@@ -207,7 +213,7 @@
                 </div>
  
             </div>
-
+            
           
         </form>
         </a>
