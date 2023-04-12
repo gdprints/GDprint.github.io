@@ -3867,3 +3867,12 @@ nav>a {
         height: 150px;
     }
 }
+.span12.formcalc{
+    display: flex;
+    width: 100%;
+}
+.span12 .formcalc #input{
+    padding: 5px;
+    width: calc(100% / 2 - 4px);
+    flex-direction: column;
+}
