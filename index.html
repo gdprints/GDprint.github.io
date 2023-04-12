@@ -137,7 +137,7 @@
                 </div>
                 <div class="span6">
                   <h2 class="animated fadeInDown"><strong>Լայնաֆորմատ  <span class="colored">Տպագրություն</span></strong></h2>
-                  <p class="animated fadeInUp"> «GOLDENDESIGN»-ը ջանք ու եռանդ չի խնայում ստեղծելու ամենաորակյալ և տեսանելի գովազդները յուրաքանչյուր հաճախորդի համար։ Հագեցած լինելով արդի սարքավորումներով և հմուտ մասնագետներով մենք աշխատանքներին կարողանում ենք տալ բարձր որակ: Կարևորելով ձեր ժամանակը, աշխատանքները պատրաստվում են սեղմ ժամկետներում: Մեզ մոտ շունչ կառնի ամեն տեսակ մտահաղացում , իսկ հմուտ դիզայներներն կառաջարկեն ամենակրեատիվ և ժամանակակից գովազդի տարբերակները ձեր բիզնեսի համար:</p>
+                  <p class="animated fadeInUp"> Vim porro dicam reprehendunt te, populo quodsi dissentiet cum ad. Ne natum deseruisse vis. Iisque deseruisse sententiae mel ne, dolores appetere vim ut. Sea no tamquam reprimique.</p>
                 </div>
 
               </div>
@@ -251,6 +251,30 @@
                   <p class="mini">Մեր գնային քաղաքականությունը կազմված է ըստ մատուցվող ծառայությունների և <br> տպագրությանը ենթակա նյութի կյանքի տևողությունը հաշվի առնելով:
                   </p>
                 </div>
+                   <form class="formcalc contactForm" name="formcalc">
+                    
+                     <input id="input" type="text" placeholder="Երկարություն" name="txtnum1">
+                    
+                     <input id="input" type="text" placeholder="Լայնություն" name="txtnum2">
+                    
+                     <input id="input" type="text" placeholder="Նյութի արժեքը" name="txtnum3">
+                    
+                     <input id="input" type="text" placeholder="Տպագրության արժեքը" name="txtres">
+                     
+                     <input  type="button" value="Հաշվել" class="btn btn-theme btn-medium" onclick="sumValues()">
+                  </form>
+      <script>
+        function sumValues(){
+    
+    var num1, num2, num3, res;
+    num1=Number(document.formcalc.txtnum1.value);
+    num2=Number(document.formcalc.txtnum2.value);
+    num3=Number(document.formcalc.txtnum3.value);
+    res=num1*num2*num3;
+    document.formcalc.txtres.value=res;
+    
+        }
+      </script>
               </div>
             </div>
 
@@ -261,13 +285,13 @@
                     <h3><strong>Հայկական</strong> նյութ</h3>
                   </div>
                   <div class="pricing-terms">
-                    <h6>2.990 <img class="dram" src="img/slides/camera/slide1/dram.png"> &#124; 1 ք.մ</h6>
+                    <h6>2.990դր &#124; 1 ք.մ</h6>
                   </div>
                   <div class="pricing-content">
                     <ul>
+                      <li><i          class="bi bi-x-square-fill"></i>Առաքում</li>
                       <li><i id="red" class="bi bi-x-square-fill"></i>Տեղադրում</li>
                       <li><i id="red" class="bi bi-x-square-fill"></i>Պատվերի դիզայն</li>
-                      <li><i class="bi bi-check-square-fill"></i>Խորհր-<br>դատվություն</li>
                       <li><i id="red" class="bi bi-x-square-fill"></i>Տպագրության երաշխիք</li>
                       <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
@@ -285,13 +309,13 @@
                     <h3><strong>Ռուսական</strong> նյութ</h3>
                   </div>
                   <div class="pricing-terms">
-                     <h6>4.990 <img class="dram" src="img/slides/camera/slide1/dram.png"> &#124; 1 ք.մ</h6>
+                     <h6>4.990դր &#124; 1 ք.մ</h6>
                   </div>
                   <div class="pricing-content">
                     <ul>
+                      <li><i          class="bi bi-x-square-fill"></i>Առաքում</li>
                       <li><i id="red" class="bi bi-x-square-fill"></i>Տեղադրում</li>
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>
-                      <li><i id="red" class="bi bi-x-square-fill"></i>Խորհր-<br>դատվություն</li>
+                      <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>                      
                       <li><i class="bi bi-check-square-fill"></i>Տպագրության երաշխիք</li>
                       <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
@@ -309,13 +333,13 @@
                         <h3><strong>Կանադական</strong> նյութ</h3>
                   </div>
                   <div class="pricing-terms">
-                     <h6>5.990 <img class="dram" src="img/slides/camera/slide1/dram.png"> &#124; 1 ք.մ</h6>
+                     <h6>5.990դր &#124; 1 ք.մ</h6>
                   </div>
                   <div class="pricing-content">
                     <ul>
-                        <li><i id="red" class="bi bi-x-square-fill"></i>Տեղադրում</li>
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>
-                      <li><i class="bi bi-check-square-fill"></i>Խորհր-<br>դատվություն</li>
+                      <li><i          class="bi bi-x-square-fill"></i>Առաքում</li>
+                      <li><i id="red" class="bi bi-x-square-fill"></i>Տեղադրում</li>
+                      <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>                      
                       <li><i class="bi bi-check-square-fill"></i>Տպագրության երաշխիք</li>
                       <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
@@ -333,20 +357,20 @@
                         <h3><strong>Եվրոպական</strong> նյութ</h3>
                   </div>
                   <div class="pricing-terms">
-                     <h6>7.990 <img class="dram" src="img/slides/camera/slide1/dram.png"> &#124; 1 ք.մ</h6>
+                     <h6>7.990դր &#124; 1 ք.մ</h6>
                   </div>
                   <div class="pricing-content">
                     <ul>
+                      <li><i class="bi bi-check-square-fill"></i>Առաքում</li>
                       <li><i class="bi bi-check-square-fill"></i>Տեղադրում</li>
                       <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>
-                      <li><i class="bi bi-check-square-fill"></i>Խորհր-<br>դատվություն</li>
                       <li><i class="bi bi-check-square-fill"></i>Տպագրության երաշխիք</li>
                       <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
                   </div>
                   <div class="pricing-action">
                       <h6>Երաշխիք 5-10 տարի</h6>
-                      <h5>EUR-KGJ9928</h5>
+                      <h5>USA-GML9928</h5>
                   </div>
                 </div>
               </div>
@@ -386,14 +410,14 @@
               </li>
               <li>
                 <blockquote>
-                  Շատ շնորհակալ եմ ձեզանից իմ հաճախորդների քանակը զգալիորեն ավելացելեն
+                  Շատ շնորհակալ եմ ձեզանից իմ հաճախորդների քանակը զգալիորեն ավելագելեն
                 </blockquote>
                 <div class="testimonial-autor">
                   <img src="img/dummies/testimonial/3.png" alt="" />
                   <h4>Անահիտ Բալայան</h4>
                 </div>
               </li>
-<!--               <li>
+              <li>
                 <blockquote>
                   Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
                   feugiat
@@ -402,7 +426,7 @@
                   <img src="img/dummies/testimonial/4.png" alt="" />
                   <h4>Marry Doe Elliot</h4>
                 </div>
-              </li> -->
+              </li>
             </ul>
 
           </div>
