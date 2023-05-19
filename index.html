@@ -39,36 +39,6 @@
 </head>
 
 <body  onload="checkCookie()">
-	<!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "106027161928513");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v16.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
   <div id="wrapper">
 
                 <!-- start header -->
@@ -167,10 +137,7 @@
                 </div>
                 <div class="span6">
                   <h2 class="animated fadeInDown"><strong>Լայնաֆորմատ  <span class="colored">Տպագրություն</span></strong></h2>
-                  <p class="animated fadeInUp"> "GOLDEN ԱՌՑԱՆՑ ՏՊԱՐԱՆԸ կկատարի ցանկացած տեսակի տպագրական 
-			  աշխատանքներ։ Դիզայն, ֆայլերի պատրաստում, չափագրում, ինքնակպչուն 
-			  թաղանթների փակցման և բաներների տեղադրման, ամրացման աշխատանքներ։ 
-			  Երաշխավորում ենք անթերի և բարձրորակ տպագրություն։</p>
+                  <p class="animated fadeInUp"> Vim porro dicam reprehendunt te, populo quodsi dissentiet cum ad. Ne natum deseruisse vis. Iisque deseruisse sententiae mel ne, dolores appetere vim ut. Sea no tamquam reprimique.</p>
                 </div>
 
               </div>
@@ -186,11 +153,7 @@
                   <img src="img/slides/camera/slide2/screen.png" alt="" />
                 </div>
                 <div class="span6">
-                  <h2 class="animated fadeInDown"><strong>Այցեքարտերի <span class="colored">Տպագրություն</span></strong></h2>
-		  <p class="animated fadeInUp"> GOLDEN ԱՌՑԱՆՑ ՏՊԱՐԱՆՈՒՄ կարող եք պատվիրել այցեքարտեր
-    		Լամինացիայի եղանակը՝  փայլուն, մատվի նաև` կոշտ լամինացված:
-		Այցեքարտի չափը՝ 90×50 մմ, թուղթը՝ 350 գր.։
-		Պատրաստման ժամկետը՝ դիզայնը հաստատելուց հետո 1 օրվա ընթացքում լազերային տպագրության դեպքում, և 5-8 աշխատանքային օր` օֆսեթի դեպքում:</p>	
+                  <h2 class="animated fadeInDown"><strong>Այցեքարտերի <span class="colored">դիզայն</span></strong></h2>
                 </div>
 
               </div>
@@ -326,15 +289,15 @@
                   </div>
                   <div class="pricing-content">
                     <ul>
-                      <li><i          class="bi bi-x-square-fill"></i>Առաքում</li>
+                      <li><i id="red" class="bi bi-x-square-fill"></i>Առաքում</li>
                       <li><i id="red" class="bi bi-x-square-fill"></i>Տեղադրում</li>
+                      <li><i id="red" class="bi bi-x-square-fill"></i>Չափագրում</li>     
                       <li><i id="red" class="bi bi-x-square-fill"></i>Պատվերի դիզայն</li>
-<!--                       <li><i id="red" class="bi bi-x-square-fill"></i>Տպագրության երաշխիք</li> -->
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
+                      <li><i id="red" class="bi bi-x-square-fill"></i>Խորհուրդատվություն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
                   </div>
                   <div class="pricing-action">
-                      <h6>Երաշխիք 1 տարի</h6>
                       <h5>ARM KGJ1988</h5>
                   </div>
                 </div>
@@ -350,15 +313,15 @@
                   </div>
                   <div class="pricing-content">
                     <ul>
-                      <li><i          class="bi bi-x-square-fill"></i>Առաքում</li>
+                      <li><i id="red" class="bi bi-x-square-fill"></i>Առաքում</li>
                       <li><i id="red" class="bi bi-x-square-fill"></i>Տեղադրում</li>
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>                      
-<!--                       <li><i class="bi bi-check-square-fill"></i>Տպագրության երաշխիք</li> -->
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
+                      <li><i id="red" class="bi bi-x-square-fill"></i>Չափագրում</li>     
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Խորհուրդատվություն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
                   </div>
                   <div class="pricing-action">
-                      <h6>Երաշխիք 2-3 տարի</h6>
                       <h5>RUS-WZX3976</h5>
                   </div>
                 </div>
@@ -372,17 +335,26 @@
                   <div class="pricing-terms">
                      <h6>5.990դր &#124; 1 ք.մ</h6>
                   </div>
+                    <style>
+                        #red{
+                            background-color: red;
+                        }
+                        #green{
+                            background-color: greenyellow;
+                            border: none;
+                        }
+                    </style>
                   <div class="pricing-content">
                     <ul>
-                      <li><i class="bi bi-check-square-fill"></i>Առաքում</li>
+                      <li><i id="red" class="bi bi-x-square-fill"></i>Առաքում</li>
                       <li><i id="red" class="bi bi-x-square-fill"></i>Տեղադրում</li>
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>                      
-<!--                       <li><i class="bi bi-check-square-fill"></i>Տպագրության երաշխիք</li> -->
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Չափագրում</li>     
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Խորհուրդատվություն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
                   </div>
                   <div class="pricing-action">
-                      <h6>Երաշխիք 3-5 տարի</h6>
                       <h5>UKR-VPW7952</h5>
                   </div>
                 </div>
@@ -398,15 +370,15 @@
                   </div>
                   <div class="pricing-content">
                     <ul>
-                      <li><i class="bi bi-check-square-fill"></i>Առաքում</li>
-                      <li><i class="bi bi-check-square-fill"></i>Տեղադրում</li>
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>
-<!--                       <li><i class="bi bi-check-square-fill"></i>Տպագրության երաշխիք</li> -->
-                      <li><i class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Առաքում</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Տեղադրում</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Չափագրում</li>     
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Պատվերի դիզայն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Խորհուրդատվություն</li>
+                      <li><i id="green" class="bi bi-check-square-fill"></i>Պատվերի տպագրություն</li>
                     </ul>
                   </div>
                   <div class="pricing-action">
-                      <h6>Երաշխիք 5-10 տարի</h6>
                       <h5>USA-GML9928</h5>
                   </div>
                 </div>
@@ -454,7 +426,7 @@
                   <h4>Անահիտ Բալայան</h4>
                 </div>
               </li>
-<!--               <li>
+              <li>
                 <blockquote>
                   Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
                   feugiat
@@ -463,7 +435,7 @@
                   <img src="img/dummies/testimonial/4.png" alt="" />
                   <h4>Marry Doe Elliot</h4>
                 </div>
-              </li> -->
+              </li>
             </ul>
 
           </div>
@@ -582,7 +554,7 @@
               <ul class="media-links">
                   <a href="https://www.instagram.com/golden.design01/"><img style="margin: 0px;" class="links" src="ico/instagram.png"></a>
                   <a href="https://www.facebook.com/golden.design01"><img class="links" src="ico/facebook.png"></a>
-                  <a href="https://t.me/golden_design01"><img class="links" src="ico/telegram.png"></a>
+                  <a href="#"><img class="links" src="ico/telegram.png"></a>
                   
               </ul>
            
@@ -623,6 +595,7 @@
     </footer>
   </div>
   <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
+
   <!-- javascript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
