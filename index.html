@@ -16,6 +16,7 @@
   <link href="css/prettyPhoto.css" rel="stylesheet" />
   <link href="css/camera.css" rel="stylesheet" />
   <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="css/popup.css" rel="stylesheet" >
   <link href="css/style.css" rel="stylesheet" />
 
   <!-- Theme skin -->
@@ -226,6 +227,31 @@
 
 
         <div class="row">
+           <div class="popup1" id="popup-1">
+                        <div class="overlay"></div>
+                        <div class="content-1">
+                            <div class="close-btn" onclick="togglePopup1()">&times;</div>
+                            <h3>Բարձրորակ տպագրություն</h3>
+                            <p>«GOLDEN ԱՌՑԱՆՑ ՏՊԱՐԱՆ»-ը ջանք ու եռանդ չի խնայում ստեղծելու ամենաորակյալ և տեսանելի գովազդները յուրաքանչյուր հաճախորդի համար։ Հագեցած լինելով արդի սարքավորումներով և հմուտ մասնագետներով մենք աշխատանքներին կարողանում ենք տալ բարձր որակ: Կարևորելով ձեր ժամանակը, աշխատանքները պատրաստվում են սեղմ ժամկետներում: Մեզ մոտ շունչ կառնի ամեն տեսակ մտահաղացում, իսկ հմուտ դիզայներներն կառաջարկեն ամենակրեատիվ և ժամանակակից գովազդի տարբերակները ձեր բիզնեսի համար:</p>
+                        </div>
+                    </div>
+                    
+                    <div class="popup2" id="popup-2">
+                        <div class="overlay"></div>
+                        <div class="content-2">
+                            <div class="close-btn" onclick="togglePopup2()">&times;</div>
+                            
+                            <h3>Հատկանիշներով հարուստ</h3>
+                            <h4>Մեզ դիմելու առավելություններն են</h4>
+                               <p>1. 24/7 
+                               Հաճախորդների աջակցման կենտրոն<br>
+                               2. Անվճար այց ձեր նշած հասցե:<br>
+                               3. Մատչելի գներով առաքման ծառայություն<br>
+                               4. Տրամաբանական գներ:<br>
+                               5. Անթերի որակ:<br>
+                               6. Մինիմալ ժամկետներ:</p>
+                        </div>
+                    </div>
           <div class="span12">
             <div class="row">
               <div class="span4">
@@ -238,6 +264,7 @@
                     <p>
                       Մենք աշխատում ենք միայն եվրոպական բարձրորակ նյութերով:
                     </p>
+                    <button class="onc" onclick="togglePopup1()">Կարդալ ավելին</button>
                   </div>
                 </div>
               </div>
@@ -252,6 +279,7 @@
                     <p>
                       Առաջարկում ենք պատվերների գրանցման առցանց տարբերակ:
                     </p>
+                    <button class="onc" onclick="togglePopup2()">Կարդալ ավելին</button>
                   </div>
                 </div>
               </div>
@@ -261,7 +289,7 @@
                     <i style="background-color: goldenrod" class="ico icon-circled icon-bgdark icon-laptop active icon-3x"></i>
                   </div>
                   <div class="text">
-                    <h4>Ժամանակակից  <strong>դիզայն</strong></h4>
+                    <h4>Ժամանակակից<br>  <strong>դիզայն</strong></h4>
                     <p>
                       Հետևելով թռենդներին մենք առաջարկում ենք աչքի ընկնող դիզայն։
                     </p>
@@ -647,6 +675,7 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/camera/camera.js"></script>
   <script src="js/camera/setting.js"></script>
+  <script src="js/popup.js"></script>
 
   <script src="js/jquery.prettyPhoto.js"></script>
   <script src="js/portfolio/jquery.quicksand.js"></script>
