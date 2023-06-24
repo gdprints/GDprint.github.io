@@ -6212,3 +6212,6 @@ a.badge:focus {
         display: none;
     }
 }
+.opacity {
+    opacity: 0.6;
+}
