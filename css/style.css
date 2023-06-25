@@ -4142,3 +4142,9 @@ nav > a {
     cursor: pointer;
     z-index: 9999;
 }*/
+@media (min-width: 80px) and (max-width: 1200px){
+    .box .text .onc {
+        display: none;
+        
+    }
+}
