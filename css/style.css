@@ -586,21 +586,31 @@ select.selectmenu {
 
 .box {
     width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    
 }
 
 .box .text h4 {
-    letter-spacing: -1.5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    
 }
-
+.box .text p{
+    font-size: 12px;
+    width: 80%;
+}
 .box:hover .text h4 {}
 
 .box .icon {
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
-
+.box .icon i{
+    font-size: 30px;
+}
 .box .text {
-    margin-left: 80px;
+    margin-left: 10px;
 }
 
 .box a {
@@ -4040,7 +4050,9 @@ nav > a {
     transform: perspective(1000px) rotateY(0deg);
     z-index: 1;
 }
-
+.hiden{
+    visibility: hidden;
+}
 /*
 .popup {
     position: fixed;
@@ -4129,7 +4141,4 @@ nav > a {
     background-position: center;
     cursor: pointer;
     z-index: 9999;
-}
-#content .hiden {
-    visibility: hidden;
-}
+}*/
