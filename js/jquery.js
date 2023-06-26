@@ -3536,7 +3536,7 @@ function checkCookie() {
     else {
      user = ("Մուտքագրեք ձեր անունը");
      if (user != "" && user != null) {
-      setCookie("username, ", user, 12);
+      setCookie("username, ", user, 1);
      }
   }
 }
