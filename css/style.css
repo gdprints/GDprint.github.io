@@ -4147,4 +4147,7 @@ nav > a {
         display: none;
         
     }
+  .popup3.active .content-3{
+        display: none;
+    }
 }
