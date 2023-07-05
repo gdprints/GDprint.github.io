@@ -4150,4 +4150,7 @@ nav > a {
   .popup3.active .content-3{
         display: none;
     }
+  .news_icon #news{
+        displey: none;
+  }
 }
