@@ -4154,3 +4154,22 @@ nav > a {
         displey: none;
   }
 }
+
+.flex .input-flex-form {
+	display: flex;
+	flex-direction: column;
+}--+
+.input-flex-form #inp{
+	padding: 10px;
+}
+.input-flex-form input, #selecct,textarea{
+	width: auto;
+	padding: 5px;
+}
+.calc #selecct{
+	width: 100%;
+}
+
+.flex .font{
+	font-size: 15px;
+}
