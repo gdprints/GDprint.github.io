@@ -7,6 +7,7 @@
 
 /* === prettify === */
 @import url('../js/google-code-prettify/prettify.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 /* === fontawesome === */
 
 @import url('font-awesome.css');
@@ -224,9 +225,12 @@ header .logo {
     float: left;
 }
 
+/*
 header .logo img {
-    margin-bottom: 10px;
+ 
 }
+*/
+/*
 
 header .logo h1 {
     color: #333;
@@ -239,6 +243,7 @@ header .logo h1 {
 header .logo h1 a {
     color: #333;
 }
+*/
 
 header .logo h1 a:hover {
     text-decoration: none;
@@ -358,7 +363,7 @@ header ul.nav li ul li ul {
     position: absolute;
     right: 0;
     margin-top: 3px;
-    padding-left: 20px;
+    padding-left: 55px;
 }
 
 .navbar .nav > li > .dropdown-menu:before {
@@ -688,7 +693,7 @@ select.selectmenu {
     top: 0;
     left: 0;
     padding: 0 0 0;
-    color: #ed4e6e;
+    color: gold;
 }
 
 .grid figcaption div {
@@ -1160,7 +1165,6 @@ form#commentform textarea {
     margin-bottom: 30px;
     cursor: pointer;
 }
-
 .item-thumbs .hover-wrap .overlay-img {
     background: #2fe2bf;
 }
@@ -3062,12 +3066,12 @@ a {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 0;
 }
 
 .box-left form .fields .input-field {
     display: flex;
-    width: calc(100% / 2 - 13mm);
+    width: calc(100% / 1 - 13mm);
     flex-direction: column;
 
 }
@@ -3088,7 +3092,6 @@ select {
     font-size: 14px;
     font-weight: 400;
     color: #333;
-
     border-radius: 5px;
     border: 1px solid #aaa;
     padding: 0 15px;
@@ -3318,14 +3321,17 @@ form .buttons button,
 }
 
 .button-form .link-btn {
-    background-color: darkgoldenrod;
+    background-color: #1E1E1E;
     padding: 8px 18px;
     font-weight: 500;
     font-size: 16px;
+	border: 0;
+	color: white;
+	outline: none;
 }
 
 .button-form .link-btn:hover {
-    background: goldenrod;
+    background-color: black;
 }
 
 #prit {
@@ -3351,9 +3357,10 @@ h3 {
 
 .input-field textarea {
     display: flex;
-    width: 104%;
+    width: 98%;
     font-size: 14px;
-    min-width: 104%;
+    min-width: 98%;
+	
     justify-content: center;
 }
 
@@ -3931,7 +3938,7 @@ nav > a {
 }
 
 .left-box {
-    width: 69%;
+    width: 100%;
     height: auto;
     padding: 20px;
 }
@@ -4053,107 +4060,19 @@ nav > a {
 .hiden{
     visibility: hidden;
 }
-/*
-.popup {
-    position: fixed;
-    font-family: 'Open Sans', sans-serif;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    z-index: 9999;
-}
 
-.contentBox {
-    position: relative;
-    width: 950px;
-    height: 400px;
-    background: #fff;
-    border-radius: 20px;
-    display: flex;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 1);
-
-}
-
-.contentBox .imgBx {
-    position: relative;
-    width: 450px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contentBox .imgBx .Bx {
-    position: relative;
-    max-width: 500px;
-    justify-content: center;
-    display: flex;
-    z-index: 1;
-}
-
-.contentBox .con {
-    position: relative;
-    width: 450px;
-    padding: 10px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contentBox #phar {
-    margin: 0px;
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.contentBox #pharagraf {
-    text-align: center;
-    margin: 15px 0px;
-    text-transform: uppercase;
-    color: #000;
-    font-size: 19px;
-    font-weight: 600;
-}
-
-.contentBox .con .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: goldenrod;
-    color: #fff;
-    margin-top: 15px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    background: url(../img/close.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-    z-index: 9999;
-}*/
 @media (min-width: 80px) and (max-width: 1200px){
     .box .text .onc {
         display: none;
         
     }
-  .popup3.active .content-3{
+    .popup3.active .content-3{
         display: none;
     }
-  .news_icon #news{
-        displey: none;
-  }
 }
+
+
+
 
 .flex .input-flex-form {
 	display: flex;
@@ -4172,4 +4091,52 @@ nav > a {
 
 .flex .font{
 	font-size: 15px;
+}
+.tabs-width{
+	width: 100%;
+	height: auto;
+}
+.thumbnail .link .padding {
+	padding: 5px 10px;	
+}
+.modal-logo{
+	max-width: 100%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+.modal-body h4{
+	font-size: 18px;
+	font-weight: bold;
+}
+.modal-body p{
+	font-size: 16px;
+	text-align: start;
+	font-weight: 500;
+}
+.content-info{
+	width: 100%;
+	display: flex;
+	padding-top: 10px;
+	
+}
+.content .content-left{
+	width: 50%;
+	border-right: 0.5px solid;
+}
+.content .content-right{
+	width: 50%;
+	border-left: 0.5px solid;
+}
+.content .content-left .left-info,.right-info{
+	padding-left: 10px;
+}
+.content .content-left .left-info,.right-info p{
+	color: green;
+	font-weight: 545;
+}
+.content .content-right .right-info p{
+	color: red;
+	font-weight: 545;
 }
