@@ -16,7 +16,9 @@
   <link href="css/prettyPhoto.css" rel="stylesheet" />
   <link href="css/camera.css" rel="stylesheet" />
   <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/media-plt.css">
   <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/media-plt.min.css">
 
   <!-- Theme skin -->
   <link href="color/default.css" rel="stylesheet" />
@@ -37,13 +39,12 @@
     Author URL: https://bootstrapmade.com
   ======================================================= -->
 </head>
-
 <body>
 
   <div id="wrapper">
 
-                 <!-- start header -->
-     <header>
+                    <!-- start header -->
+    <header>
       <div class="top">
         <div class="container">
           <div class="row">
@@ -123,16 +124,17 @@
         </div>
       </div>
     </header>
+
     <section id="inner-headline">
       <div class="container">
         <div class="row">
           <div class="span12">
             <div class="inner-heading">
-                   <div class="buttons-container">
-                        <button id="save">Պահպանել</button>
-                       <button onclick="print" id="print">Տպել</button>
-                      
-                    </div>
+            <div class="buttons-container">
+            <button id="save">Պահպանել</button>
+            <button onclick="print" id="print">Տպել</button>
+            
+             </div>
             </div>
           </div>
         </div>
@@ -143,9 +145,14 @@
       <div class="container">
         <div class="row">
 
-       <a id="save_to_image">
-        <h3>Այցեքարտերի տպագրություն</h3>
-        <form action="https://formspree.io/f/mgebpyag" method="POST">
+    <div class="container">
+    <label for="upload-input" id="pit" class="upload-label">Վերբեռնել պատկերը</label>
+     <a id="save_to_image">
+      <div class="cont">
+      
+      <div class="box-left">
+           <h3>Պլոտերային հատում</h3>
+        <form action="#" >
            
             <div class="form first">
                 <div class="details personal">
@@ -153,81 +160,65 @@
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Անուն</label>
-                            <input name="First name" type="text" placeholder="Անուն" required>
+                            <label>Անուն &#42;</label>
+                            <input type="text" placeholder="Անուն" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Ազգանուն</label>
-                            <input name="Last name" type="text" placeholder="Ազգանուն" required>
+                            <label>Ազգանուն &#42;</label>
+                            <input type="text" placeholder="Ազգանուն" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Հեռ. համար</label>
-                            <input name="tel" type="tel" placeholder="095818921" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+                            <label>Հեռ. համար &#42;</label>
+                            <input type="tel" placeholder="095818921" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Էլ հասցե</label>
-                            <input name="email" type="email" placeholder="Էլ հասցե" required>
+                            <label>Էլ հասցե &#42;</label>
+                            <input type="email" placeholder="Էլ հասցե" required>
                         </div>
-                           <div class="input-field">
-                            <label>Ընտրել քանակը &#42;</label>
-                            <select name="select" class="select" required >
-                               <option name="select" id="padding" value="1000 հատ">1000 հատ</option>
-                               <option name="select" id="padding" value="3000 հատ">3000 հատ</option>
-                               <option name="select" id="padding" value="5000 հատ">5000 հատ</option>
-                               <option name="select" id="padding" value="7000 հատ">7000 հատ</option>
-                               <option name="select" id="padding" value="9000 հատ">9000 հատ</option>
-                               <option name="select" id="padding" value="11000 հատ">11000 հատ</option>
-                              
-                              
-                            
-                            </select>
-                        </div>
-                      <div class="input-field">
-                            <label>Ընտրել գրամը &#42;</label>
-                            <select name="select_2" class="select" required >
-                               <option name="select_2" id="padding" value="270գր.">270գր.</option>
-                               <option name="select_2" id="padding" value="300գր.">300գր.</option>
-                               <option name="select_2" id="padding" value="350գր.">350գր.</option>
-                            </select>
+
+                        <div class="input-field">
+                            <label>Պատկերի գույն &#42;</label>
+                           <input type="text" placeholder="Պատկերի գույն">
                         </div>
                         
-                           <div class="input-field">
-                            <label>Ընտրել տեսակը &#42;</label>
-                            <select name="select_3" class="select" required >
-                               <option name="select_3" id="padding" value="Անփայլ">Անփայլ</option>
-                               <option name="select_3" id="padding" value="փայլուն">փայլուն</option>
-                            </select>
-                        </div>
-                        
-                              <div class="input-field">
-                            <label>Ընտրել տպագրության տեսակը &#42;</label>
-                            <select name="select_4" class="select" required >
-                               <option name="select_4" id="padding" value="1 կողմանի տպագրություն">1 կողմանի տպագրություն</option>
-                               <option name="select_4" id="padding" value="2 կողմանի տպագրություն">2 կողմանի տպագրություն</option>
-                            </select>
+                        <div class="input-field">
+                            <label>Ֆոնի գույն &#42;</label>
+                            <input type="text" placeholder="Ֆոնի գույն">
                         </div>
                         <div class="input-field">
-                        <label>Պատվերի բնութագիր</label>
-                        <textarea name="message" cols="150" rows="10" placeholder="Պատվերի բնութագիր"></textarea>
+                            <label>Երկարություն  &#40;մմ-ով&#41; &#42;</label>
+                            <input type="tel" required placeholder="Երկարություն  &#40;մմ-ով&#41;">
                         </div>
-                        <button id="save" class="btn btn-theme btn-medium margintop10" type="submit">Ուղարկել</button>
+                        
+                        <div class="input-field">
+                            <label>Լայնություն  &#40;մմ-ով&#41; &#42;</label>
+                            <input type="tel" required placeholder="Լայնություն  &#40;մմ-ով&#41;">
+                        </div> 
                     </div>
                     
-                    <div class="buttons-container">
-                       
-                    </div>
-                   
                 </div>
- 
             </div>
-            
-          
         </form>
+      </div>
+      <div class="box-right">
+          <form action="https://formspree.io/f/xoqzkbnj" method="post">
+              <div class="upload-box">
+                <div class="upload-img">
+                     <img src="img/upload.svg" alt="">
+                </div>
+                
+                <input type="file"  id="upload-input" accept="images/*">
+           </div>
+              
+        </form>
+      </div>
+          
+        </div>
         </a>
-    
+    </div>
           
             
           </div>
@@ -298,7 +289,7 @@
 
             </div>
 
-             <div class="span6">
+            <div class="span6">
               <div class="credits">
                 Designed by <a href="https://www.facebook.com/golden.design01">Harutyun Chalikyan</a>
               </div>
@@ -331,8 +322,8 @@
   <script src="js/inview.js"></script>
 
   <!-- Template Custom JavaScript File -->
+  <script src="js/upload.js"></script>
   <script src="js/custom.js"></script>
-    <script src="form-large.html"></script>
     <script src="index.js"></script>
     <script src="html2canvas.js"></script>
 </body>
