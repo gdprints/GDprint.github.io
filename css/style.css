@@ -207,7 +207,7 @@ header {
 header .top {
     padding: 10px 0 10px;
     margin: 0 0 30px;
-    background: #545454;
+    background: black;
 }
 
 header .top p.topcontact {
@@ -1983,7 +1983,7 @@ ul.time-post li.time {
 footer {
     padding: 50px 0 0 0;
     color: #bbb;
-    background: #222;
+    background: black;
 }
 
 footer a {
