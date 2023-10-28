@@ -38,8 +38,39 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="checkCookie()">
+<div class="elfsight-app-c513dfe4-fc37-4b71-b2b3-48dccb9d14ab"></div>
+	<!-- Messenger Chat Plugin Code -->
+	<div id="fb-root"></div>
 
+	<!-- Your Chat Plugin code -->
+	<div id="fb-customer-chat" class="fb-customerchat">
+	</div>
+
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "106027161928513");
+		chatbox.setAttribute("attribution", "biz_inbox");
+	</script>
+
+	<!-- Your SDK code -->
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml: true,
+				version: 'v16.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
   <div id="wrapper">
 
                  <!-- start header -->
@@ -50,13 +81,13 @@
             <div class="span6">
               <p class="topcontact"><i class="icon-phone"></i> &#40;&#43;374&#41;95 818&#45;921</p>
             </div>
-<!--             <div class="span6">
+            <div class="span6">
               <ul class="social-network">
                 <li><a href="https://www.instagram.com/golden.design01/" data-placement="bottom" title="instagram"><img src="ico/instagram.png"></a></li>
                 <li><a href="https://www.facebook.com/golden.design01" data-placement="bottom" title="Facebook"><img src="ico/facebook.png"></a></li>
                 <li><a href="#" data-placement="bottom" title="telegram"><img src="ico/telegram.png"></a></li>
               </ul>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -138,15 +169,14 @@
         </div>
       </div>
     </section>
-
     <section id="content">
       <div class="container">
         <div class="row">
 
        <a id="save_to_image">
         <h3>Լայնաֆորմատ Տպագրություն</h3>
-        <form action="https://formspree.io/f/xwkjranv" method="POST">
-           
+        <form name="Լայնաֆորմատ_Տպագրություն" action="https://formsubmit.co/gdprints999@gmail.com" method="POST">
+    
             <div class="form first">
                 <div class="details personal">
                     <h4>Պատվերի գրանցման ձևաթուղտ</h4>
@@ -154,67 +184,74 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Անուն</label>
-                            <input name="First name" type="text" placeholder="Անուն" required>
+                            <input name="Անուն" type="text" placeholder="Անուն" required>
                         </div>
 
                         <div class="input-field">
                             <label>Ազգանուն</label>
-                            <input name="Last name" type="text" placeholder="Ազգանուն" required>
+                            <input name="Ազգանուն" type="text" placeholder="Ազգանուն" required>
                         </div>
 
                         <div class="input-field">
                             <label>Հեռ. համար</label>
-                            <input name="tel" type="tel" placeholder="095818921" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+                            <input name="Հեռախոսահամար" type="tel" placeholder="095818921" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
                         </div>
 
                         <div class="input-field">
                             <label>Էլ հասցե</label>
-                            <input name="email" type="email" placeholder="Էլ հասցե" required>
+                            <input name="Էլ_հասցե" type="email" placeholder="Էլ հասցե" required>
                         </div>
                         
                         <div name="select" class="input-field">
                             <label>Ընտրել նյութ</label>
-                            <select name="select" class="select" required >
-                               <option name="select" id="padding" value="Banner">Banner</option>
-			       			   <option name="select" id="padding" value="Banner">Setka Banner</option>
-                               <option name="select" id="padding" value="Banner+ողակ">Banner+ողակ</option>
-                               <option name="select" id="padding" value="Samokley">Samokley</option>
-                               <option name="select" id="padding" value="Setka Samokley">Setka Samokley</option>
+                            <select name="Նյութ" class="select" required >
+                               <option name="Նյութ" id="padding" value="Banner">Banner</option>
+			       			   <option name="Նյութ" id="padding" value="Banner">Setka Banner</option>
+                               <option name="Նյութ" id="padding" value="Banner+ողակ">Banner+ողակ</option>
+                               <option name="Նյութ" id="padding" value="Samokley">Samokley</option>
+                               <option name="Նյութ" id="padding" value="Setka Samokley">Setka Samokley</option>
                             </select>
                         </div>
                         
                         <div class="input-field">
                             <label>Երկարություն</label>
-                            <input name="length:" type="text" placeholder="Երկարություն" required>
+                            <input name="Երկարություն" type="text" placeholder="Երկարություն" required>
                         </div>
                         
                         <div class="input-field">
                             <label>Լայնություն</label>
-                            <input name="width:" type="text" placeholder="Լայնություն" required>
+                            <input name="Լայնություն" type="text" placeholder="Լայնություն" required>
                         </div>
                         
                         
                            <div name="select_2" class="input-field">
                             <label>Ընտրել փաթեթ</label>
-                            <select name="select_2" class="select" required >
-                               <option name="select_2" id="padding" value="Մատչելի փաթեթ">Մատչելի փաթեթ</option>
-                               <option name="select_2" id="padding" value="Էկոնոմ փաթեթ">Էկոնոմ փաթեթ</option>
-                               <option name="select_2" id="padding" value="Պրեմիում փաթեթ">Պրեմիում փաթեթ</option>
-                               <option name="select_2" id="padding" value="Գոլդ փաթեթ">Գոլդ փաթեթ</option>
+                            <select name="Փաթեթ" class="select" required >
+                               <option name="Փաթեթ" id="padding" value="Մատչելի փաթեթ">Մատչելի փաթեթ</option>
+                               <option name="Փաթեթ" id="padding" value="Էկոնոմ փաթեթ">Էկոնոմ փաթեթ</option>
+                               <option name="Փաթեթ" id="padding" value="Պրեմիում փաթեթ">Պրեմիում փաթեթ</option>
+                               <option name="Փաթեթ" id="padding" value="Գոլդ փաթեթ">Գոլդ փաթեթ</option>
                             </select>
                         </div>
 					
                         <div class="input-field">
-                        <label>Պատվերի բնութագիր</label>
-                        <textarea name="message" cols="100" rows="10" placeholder="Պատվերի բնութագիր"></textarea>
+                        <label>Պատվերի նկարագրություն</label>
+                        <textarea name="Հաղորդակցություն" cols="160" rows="8" placeholder="Պատվերի նկարագրություն"></textarea>
                         </div>
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://gdprint.github.io/Thank_you.html">
                         
-                        <button id="save" class="btn btn-theme btn-medium margintop10" type="submit">Ուղարկել</button>
+                        <button style="margin-left:  0;" id="save" class="btn btn-theme btn-medium margintop10 button" type="submit">Ուղարկել</button>
+                        
                     
+<!--
                     
                     <div class="buttons-container">
-                       
+                       <span>Կարդացել եմ և համաձայնեմ պայմաներին</span>
+                        <input type="checkbox">
                     </div>
+-->
                    
                 </div>
  
@@ -279,6 +316,7 @@
            
           </div>
           </div>
+          
         </div>
       </div>
       <div id="sub-footer">
