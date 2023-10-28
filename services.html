@@ -38,8 +38,39 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="checkCookie()">
+<div class="elfsight-app-c513dfe4-fc37-4b71-b2b3-48dccb9d14ab"></div>
+	<!-- Messenger Chat Plugin Code -->
+	<div id="fb-root"></div>
 
+	<!-- Your Chat Plugin code -->
+	<div id="fb-customer-chat" class="fb-customerchat">
+	</div>
+
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "106027161928513");
+		chatbox.setAttribute("attribution", "biz_inbox");
+	</script>
+
+	<!-- Your SDK code -->
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml: true,
+				version: 'v16.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
   <div id="wrapper">
 
                     <!-- start header -->
@@ -142,23 +173,15 @@
     <section id="content">
       <div class="container">
         <div class="row">
-
           <div class="span12">
             <h4 class="title">Պատվիրեք առցանց խնայեք ժամանակ</h4>
-<!--
             <p>
-              Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo accusam consequuntur, eum ea debitis urbanitas. Nibh reformidans vim ne.
+                <strong>Ողջույն հարգելի հաճախորդ,</strong> ուրախ ենք ձեզ տեղեկացնել առ այն, որ այսուհետ կարող եք առանց տպարան այցելելու  օգտվել տպարանի ծառայություններից և ընդամենը <strong>10-15 վարկյանում</strong> կարող եք պատվիրել ծառայություն:
             </p>
--->
-
-
           </div>
-
         </div>
-
-
+        
         <div class="row">
-
             <div class="span3">
             <div class="service-box aligncenter flyLeft">
               <div class="icon">
@@ -168,15 +191,14 @@
               <a class="button-form" href="form-large.html" class="thumbnail"><button class="link-btn">Պատրաստել</button></a> 
             </div>
           </div>
-          
-                   
+                
            <div class="span3">
             <div class="service-box aligncenter flyIn">
             <div class="icon">
                 <i class="bi bi-vector-pen"></i>
               </div>
               <h5>Պլոտերային <span class="colored">հատում</span></h5>
-                <a class="button-form" href="form-plt.html" class="thumbnail"><button class="link-btn">Պատրաստել</button></a>               
+                <a class="button-form" href="largeplot.html" class="thumbnail"><button class="link-btn">Պատրաստել</button></a>               
             </div>
           </div>
         
@@ -188,7 +210,7 @@
                 <i class="bi bi-person-vcard"></i>
               </div>
               <h5>Այցեքարտերի<br> <span class="colored">տպագրություն</span></h5>
-               <a class="button-form" href="form-card.html" class="thumbnail"><button class="link-btn">Պատրաստել</button></a> 
+               <a class="button-form" href="form-card.html"><button class="link-btn">Պատրաստել</button></a> 
             </div>
           </div>
           
@@ -198,238 +220,13 @@
                 <i class="bi bi-qr-code"></i>
               </div>
               <h5>QR կոդի<br> <span class="colored">գեներացում</span></h5>
-                 <a class="button-form" href="for.html" class="thumbnail"><button class="link-btn">Պատրաստել</button></a> 
-               
-               	<div class="roles aligncenter">
-               	
-                <div id="myModalfour" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalfourLabel" aria-hidden="true">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <div class="modal-logo">
-                    	<img src="ico/apple-touch-icon-114-precomposed.png" width="36px" alt="">
-                    </div>
-                  </div>
-                  
-                  <div class="modal-body">
-        		<section id="content">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-  <div class="wr">
-      <nav>
-        <a id="qr" href="#">QR Կոդ</a>
-        <div class="active qr" id="generator">Գեներատոր</div>
-<!--        <div id="scanner">Scanner</div>-->
-      </nav>
-
-      <div class="container active" id="generator-container">
-        <div class="left">
-          <form action="#">
-            <div class="text">
-              <label for="text">
-                <i class="fa-solid fa-keyboard"></i>
-                ՄՈՒՏՔԱԳՐԵՔ ՁԵՐ URL-Ը
-              </label>
-              <input
-                type="text"
-                id="text"
-                placeholder="example (www.google.com) "
-              />
-            </div>
-            <div class="color">
-              <label>
-                <i class="fa-solid fa-paintbrush"></i>
-                գույն
-              </label>
-              <div class="colors-wrapper">
-                <div class="foreground">
-                  <span class="heading">առաջին պլան</span>
-                  <div class="custom-picker">
-                    <span></span>
-                    <input type="text" disabled value="#DAA520" />
-                    <input
-                      class="color-picker"
-                      type="color"
-                      id="fg-color"
-                      value="#DAA520"
-                    />
-                  </div>
-                </div>
-                <div class="background">
-                  <span class="heading">ֆոն</span>
-                  <div class="custom-picker">
-                    <span></span>
-                    <input type="text" disabled value="#ffffff" />
-                    <input
-                      class="color-picker"
-                      type="color"
-                      id="bg-color"
-                      value="#ffffff"
-                    />
-                  </div>
-                </div>
-                <div class="corner">
-                  <span class="heading">անկյուն</span>
-                  <div class="custom-picker">
-                    <span></span>
-                    <input type="text" disabled value="#000000" />
-                    <input
-                      class="color-picker"
-                      type="color"
-                      id="corner-color"
-                      value="#000000"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-           <div class="type">
-              <label>
-                <i class="fa-solid fa-qrcode"></i>
-                Ոճը
-              </label>
-              <div class="types-wrapper">
-                <div class="dots">
-                  <span class="heading">dots</span>
-                  <div class="custom-dropdown">
-                    <span class="selected" id="dots-style">square</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <div class="options">
-                      <span class="option">dots</span>
-                      <span class="option active">square</span>
-                      <span class="option">rounded</span>
-                      <span class="option">extra-rounded</span>
-                      <span class="option">classy</span>
-                      <span class="option">classy-rounded</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="corner-squares">
-                  <span class="heading">corners squares</span>
-                  <div class="custom-dropdown">
-                    <span class="selected" id="corner-squares-style"
-                      >square</span
-                    >
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <div class="options">
-                      <span class="option">dots</span>
-                      <span class="option active">square</span>
-                      <span class="option">extra-rounded</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="corner-dots">
-                  <span class="heading">corners dots</span>
-                  <div class="custom-dropdown">
-                    <span class="selected" id="corner-dots-style">square</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <div class="options">
-                      <span class="option">dots</span>
-                      <span class="option active">square</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="logo">
-              <label>
-                <i class="fa-solid fa-image"></i>
-                Լոգոն
-              </label>
-              <div class="logos">
-                <label class="logo">
-                  <input type="radio" name="logo" value="yt" checked />
-                  <img src="img/golden.png" alt="" id="yt" />
-                </label>
-                <label class="logo">
-                  <input type="radio" name="logo" value="fb"  />
-                  <img src="img/facebook.png" alt="" id="fb" />
-                </label>
-                <label class="logo">
-                  <input type="radio" name="logo" value="tw" />
-                  <img src="img/twitter.png" alt="" id="tw" />
-                </label>
-                <label class="logo">
-                  <input type="radio" name="logo" value="db" />
-                  <img src="img/pinterest.png" alt="" id="db" />
-                </label>
-                <label class="logo">
-                  <input type="radio" name="logo" value="ct" />
-                  <div class="upload-img">
-                    <i class="fa-solid fa-upload"></i>
-                    <input type="file" id="upload-img-input" />
-                    <img alt="" id="ct" />
-                  </div>
-                </label>
-              </div>
-            </div>
-            <div class="size">
-              <label>
-                <i class="fa-solid fa-expand"></i>
-                չափը
-              </label>
-              <div class="custom-slider">
-                <p class="left-text">ցածր</p>
-                <div class="slider">
-                  <span>500 x 500</span>
-                  <input
-                    type="range"
-                    min="100"
-                    max="2000"
-                    value="500"
-                    id="size"
-                  />
-                </div>
-                <p class="right-text">բարձր</p>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="right">
-          <button class="generate-btn">ստեղծել qr կոդը</button>
-          <div class="qr-code">
-            <div class="qr-code-img"></div>
-          </div>
-          <div class="download">
-            <p>ներբեռնել ներս</p>
-            <div class="download-btns">
-              <button class="download-btn" id="download-png">
-                <i class="fa-solid fa-download"></i>
-                png
-              </button>
-              <button class="download-btn" id="download-jpg">
-                <i class="fa-solid fa-download"></i>
-                jpg
-              </button>
-              <button class="download-btn" id="download-svg">
-                <i class="fa-solid fa-download"></i>
-                svg
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-          </div>
-        </div>
-      </div>
-    </section>
-                  </div>
-                  
-                  <div class="modal-footer">
-                    <a href="viber://chat?number=&#43;37496965874" class="btn |button type|"><i class="icon-|icon name|"></i>Chat viber</a>
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                  </div>
-                  
-                </div>
-              </div>
+                 <a class="button-form" href="for.html" class="thumbnail"><button class="link-btn">Պատրաստել</button></a>  
             </div>
           </div>
 
-<!--
+
           <div class="span3">
-            <div class="service-box aligncenter flyIn">
+            <div class="service-box aligncenter flyLeft">
             <div class="icon">
                 <i height="72px" class="bi bi-camera"></i>
               </div>
@@ -438,18 +235,18 @@
 
             </div>
           </div>
--->        
-<!--
+        
+
             <div class="span3">
-            <div class="service-box aligncenter flyLeft">
+            <div class="service-box aligncenter flyIn">
               <div class="icon">
-                <i class="bi bi-bezier"></i>
-              </div>
-              <h5>Գրաֆիկական <span class="colored"> դիզայն</span></h5>
-              <a class="button-form" href="#"><button class="link-btn">Պատրաստել</button></a> 
+                <i class="bi bi-filetype-pdf"></i>
+              </div> 
+              <h5>Ձևաթղտերի <br><span class="colored">Տպագրություն</span></h5>
+              <a class="button-form" href="form-document.html"><button class="link-btn">Պատրաստել</button></a> 
             </div>
           </div>
--->         
+         
 <!--
            <div class="span3">
             <div class="service-box aligncenter flyIn">
@@ -466,7 +263,7 @@
 
         <div class="row">
           <div style="text-align: center;" class="span12 flyIn"> 
-                <p style="font-size: 18px; color: red;margin-bottom: 20px; "><strong>Ողջույն հարգելի հաճախորդ,</strong> ուրախ ենք ձեզ տեղեկացնել առ այն, որ այսուհետ կարող եք առանց տպարան այցելելու  օգտվել տպարանի ծառայություններից և ընդամենը <strong>10-15 վարկյանում</strong> կարող եք պատվիրել ծառայություն:</p>
+              
 				
                 
           </div>
@@ -592,4 +389,4 @@
 </body>
 
 </html>
-s
+
