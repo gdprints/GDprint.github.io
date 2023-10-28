@@ -30,15 +30,41 @@
   
   <!-- Boostrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <!-- =======================================================
-    Theme Name: Eterna
-    Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
-<body>
 
+</head>
+<body onload="checkCookie()">
+	<div class="elfsight-app-c513dfe4-fc37-4b71-b2b3-48dccb9d14ab"></div>
+	<!-- Messenger Chat Plugin Code -->
+	<div id="fb-root"></div>
+
+	<!-- Your Chat Plugin code -->
+	<div id="fb-customer-chat" class="fb-customerchat">
+	</div>
+
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "106027161928513");
+		chatbox.setAttribute("attribution", "biz_inbox");
+	</script>
+
+	<!-- Your SDK code -->
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml: true,
+				version: 'v16.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
   <div id="wrapper">
 
                    <!-- start header -->
@@ -49,13 +75,13 @@
             <div class="span6">
               <p class="topcontact"><i class="icon-phone"></i> &#40;&#43;374&#41;95 818&#45;921</p>
             </div>
-<!--             <div class="span6">
+            <div class="span6">
               <ul class="social-network">
                 <li><a href="https://www.instagram.com/golden.design01/" data-placement="bottom" title="instagram"><img src="ico/instagram.png"></a></li>
                 <li><a href="https://www.facebook.com/golden.design01" data-placement="bottom" title="Facebook"><img src="ico/facebook.png"></a></li>
                 <li><a href="#" data-placement="bottom" title="telegram"><img src="ico/telegram.png"></a></li>
               </ul>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -213,13 +239,12 @@
                         </div>
                         
                               <div class="input-field">
-                            <label>Ընտրել տպագրության տեսակը &#42;</label>
-                            <select name="select_4" class="select" required >
-                               <option name="select_4" id="padding" value="1 կողմանի տպագրություն">1 կողմանի տպագրություն</option>
-                               <option name="select_4" id="padding" value="2 կողմանի տպագրություն">2 կողմանի տպագրություն</option>
-                            </select>
+                          <label for="">Ֆայլի հղում</label>
+					        <input class="url" type="url" placeholder="Ներմուծեք ֆայլի հղումը" required>
                         </div>
-                        
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://gdprint.github.io/Thank_you.html">
                     </div>
                     
                     <div class="buttons-container">
