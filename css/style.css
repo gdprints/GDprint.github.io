@@ -1,10 +1,3 @@
-/*
-  Theme Name: Eterna
-  Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-*/
-
 /* === prettify === */
 @import url('../js/google-code-prettify/prettify.css');
 /* === fontawesome === */
@@ -530,6 +523,7 @@ select.selectmenu {
 #content img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 /* --- Call to action --- */
@@ -588,27 +582,31 @@ select.selectmenu {
     width: 100%;
     display: inline-flex;
     justify-content: center;
-    
+
 }
 
 .box .text h4 {
     letter-spacing: 1px;
     font-size: 20px;
-    
+
 }
-.box .text p{
+
+.box .text p {
     font-size: 12px;
     width: 80%;
 }
+
 .box:hover .text h4 {}
 
 .box .icon {
     float: left;
     margin-bottom: 0px;
 }
-.box .icon i{
+
+.box .icon i {
     font-size: 30px;
 }
+
 .box .text {
     margin-left: 10px;
 }
@@ -984,7 +982,11 @@ select.selectmenu {
 ==================================== */
 
 #inner-headline {
-    background: #fcfcfc;
+    background: #fff;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-size: cover;
     position: relative;
     margin: 0;
     padding: 20px 0 10px;
@@ -3067,9 +3069,24 @@ a {
 
 .box-left form .fields .input-field {
     display: flex;
-    width: calc(100% / 2 - 13mm);
+    width: calc(100% / 4 - 14mm);
     flex-direction: column;
 
+}
+
+.fields .input-all {
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+}
+
+.fields .input-all .url {
+    max-width: 100%;
+    display: grid;
+    width: calc(100% / 1 - 6mm);
+    padding: 10px;
+    flex-direction: column;
+    border: 1px solid #aaa;
 }
 
 form .fields .input-field input {
@@ -3351,11 +3368,11 @@ h3 {
 
 .form .input-field textarea {
     display: flex;
-    width: 1135px;
+    width: 100%;
     font-size: 14px;
     min-width: 100%;
-	max-width: 100%;
-	justify-content: space-between;
+    max-width: 100%;
+    justify-content: space-between;
 }
 
 /*QR Code*/
@@ -4051,9 +4068,11 @@ nav > a {
     transform: perspective(1000px) rotateY(0deg);
     z-index: 1;
 }
-.hiden{
+
+.hiden {
     visibility: hidden;
 }
+
 /*
 .popup {
     position: fixed;
@@ -4143,34 +4162,41 @@ nav > a {
     cursor: pointer;
     z-index: 9999;
 }*/
-@media (min-width: 80px) and (max-width: 1200px){
+@media (min-width: 80px) and (max-width: 1200px) {
     .box .text .onc {
         display: none;
-        
+
     }
-  .popup3.active .content-3{
+
+    .popup3.active .content-3 {
         display: none;
     }
-  .news_icon #news{
+
+    .news_icon #news {
         displey: none;
-  }
+    }
 }
 
 .flex .input-flex-form {
-	display: flex;
-	flex-direction: column;
-}
-.input-flex-form #inp{
-	padding: 10px;
-}
-.input-flex-form input, #selecct,textarea{
-	width: auto;
-	padding: 5px;
-}
-.calc #selecct{
-	width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.flex .font{
-	font-size: 15px;
+.input-flex-form #inp {
+    padding: 10px;
+}
+
+.input-flex-form input,
+#selecct,
+textarea {
+    width: auto;
+    padding: 5px;
+}
+
+.calc #selecct {
+    width: 100%;
+}
+
+.flex .font {
+    font-size: 15px;
 }
