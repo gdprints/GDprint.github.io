@@ -22,12 +22,12 @@
   <link href="color/default.css" rel="stylesheet" />
 
   <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png"/>
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
   <link rel="shortcut icon" href="ico/apple-touch-icon-144-precomposed.png" />
-  
+
   <!-- Boostrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <!-- =======================================================
@@ -37,100 +37,49 @@
     Author URL: https://bootstrapmade.com
   ======================================================= -->
 </head>
-<body>
 
+<body onload="checkCookie()">
+  <div class="elfsight-app-c513dfe4-fc37-4b71-b2b3-48dccb9d14ab"></div>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "106027161928513");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml: true,
+        version: 'v16.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  </script>
   <div id="wrapper">
-
-                <!-- start header -->
-    <header>
-      <div class="top">
-        <div class="container">
-          <div class="row">
-            <div class="span6">
-              <p class="topcontact"><i class="icon-phone"></i> &#40;&#43;374&#41;95 818&#45;921</p>
-            </div>
-<!--             <div class="span6">
-              <ul class="social-network">
-                <li><a href="#" data-placement="bottom" title="instagram"><img src="ico/instagram.png"></a></li>
-                <li><a href="#" data-placement="bottom" title="Facebook"><img src="ico/facebook.png"></a></li>
-                <li><a href="#" data-placement="bottom" title="telegram"><img src="ico/telegram.png"></a></li>
-              </ul>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="container">
+ <header class="hero-header">
+   
+ </header>
 
 
-         <div class="row nomargin">
-          <div class="span4">
-            <div class="logo">
-              <a href="index.html"><img src="img/logo.png" alt="" /></a>
-            </div>
-          </div>
-          <div class="span8">
-            <div class="navbar navbar-static-top">
-              <div class="navigation">
-                <nav>
-                  <ul class="nav topnav">
-                    <li class="dropdown">
-                      <a href="index.html">Տուն</a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="about.html">Մեր մասին</a>
-                    </li>
-                        <li class="dropdown">
-                      <a href="services.html">Ծառայություններ</a>
-<!--
-                      <ul class="dropdown-menu">
-                        <li><a href="pricingbox.html">Pricing boxes</a></li>
-                        <li><a href="404.html">404</a></li>
-                      </ul>
--->
-                    </li>
-                    <li class="dropdown">
-                      <a href="portfolio-4cols.html">Պորտֆոլիո</a>
-<!--
-                      <i class="icon-angle-down"></i>
-                      <ul class="dropdown-menu">
-                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-                      </ul>
--->
-                    </li>
-                       <li class="dropdown ">
-                      <a href="blog-left-sidebar.html">Բլոգ</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Կապ</a>
-                    </li>
-                    <li class="dropdown active">
-                      <a href="#">Այլ<i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown"><a href="team.html">Թիմ</a>
-                        <li class="dropdown"><a href="404.html">Կանոնակարգ</a>
-                        <li class="dropdown"><a href="faq.html">Հարց ու պատասխան</a>
-			<li class="dropdown"><a href="pricingbox.html">Գնային տուփ</a>
-<!--
-                        <li class="dropdown"><a href="pricingbox.html">Parallax slider</a>
 
-                          <ul class="dropdown-menu sub-menu-level1">
-                            <li><a href="index.html">Sub menu</a></li>
-                            <li><a href="index.html">Sub menu</a></li>
-                          </ul>
-
-                        </li>
--->
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <!-- end navigation -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
 
     <section id="inner-headline">
       <div class="container">
@@ -140,61 +89,35 @@
               <ul class="breadcrumb">
                 <li><a href="index.html">Տուն</a> <i class="icon-angle-right"></i></li>
                 <li><a href="#"></a>Այլ<i class="icon-angle-right"></i></li>
-                <li class="active">Կանոնակարգ</li>
+                <li class="active">404</li>
               </ul>
-              <h2>Ընդհանուր դրույթներր և պայմանները</h2>
+              <h2>404</h2>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section id="content">
-      <div class="container">
-
-
-
-        <div class="row">
-          <div class="span12">
-            <div class="aligncenter">
-             <img width="144px;" height="144px" src="ico/72log.png">
-            </div>
-            <div class="blankline30"></div>
-            
-<!--            <h1 class="aligncenter">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐԻ ՄԱՏՈՒՑՄԱՆ ԿԱՆՈՆԱԿԱՐԳԸ</h1>-->
-            <br>
-            <br> 
-            <h3 class="alignstart">GOLDEN DESIGN-Ը ԻՐԱՎՈՒՆՔ ՈՒՆԻ`</h3>
-
-                <p class="alignstart-p">1. Ծառայությունները մատուցել պատշաճ որակով և ամբողջ ծավալով,</p>
-                <p class="alignstart-p">1.1 Պատվիրատուի պահանջով անհապաղ և անհատույց վերացնել
-                    հայտնաբերված բոլոր թերությունները,</p>
-                <p class="alignstart-p">1.2 Հաշվետու լինել միայն տվյալ կազմակերպության ‹‹Ա/Ձ,ՍՊԸ,ՓԲԸ›› տնօրենի կամ այլ լիազորված անձի։</p>
-                <br>
-            <h3 class="alignstart">GOLDEN DESIGN ԱՌՑԱՆՑ ՏՊԱՐԱՆԸ ՊԱՐՏԱՎՈՐ Է`</h3>
-
-                <p class="alignstart-p">2. Պատվիրատուի կողմից սույն պայմանագրի 3-րդ կետով սահմանված կարգը երկու անգամ խախտելու դեպքում՝ հրաժարվել սույն պատվերի կատարումից:</p>
-                  <br> 
-            <h3 class="alignstart">ՊԱՏՎԻՐԱՏՈՒՆ ԻՐԱՎՈՒՆՔ ՈՒՆԻ`</h3>
-
-                <p class="alignstart-p">2.1 Ցանկացած ժամանակ ստուգել Կատարողի Ծառայությունների ընթացքը և որակը` առանց միջամտելու նրա գործունեությանը,</p>
-                <p class="alignstart-p">2.2 Ցանկացած ժամանակ հրաժարվել պայմանագիրը կատարելուց` Կատարողին վճարելով սահմանված գնի այն մասը, որը համապատասխանում է մինչև պայմանագրի կատարումից Պատվիրատուի հրաժարման մասին տեղեկություն ստանալը մատուցված Ծառայությունների չափին:</p>
-                <p class="alignstart-p">2.3 Պատվիրատուն պարտավոր է Ծառայությունների դիմաց վճարել սույն պայմանագրի 3.1-րդ կետում նշված կանոնակարգին համապատասխան:</p>
-                <br>
-            <h3 class="alignstart">ԾԱՌԱՅՈՒԹՅԱՆ ՎՃԱՐՄԱՆ ԿԱՐԳԸ</h3>
-               
-                <p class="alignstart-p">3. Սույն կարգով պատվերի համախառն արժեքը (անհատ քաղաքացին) պատվիրատուն պարտավոր է վճարել պատվերի գրանցումից ոչ ուշ քան 1 ժամվա ընդացգում:</p>
-               
-                <br>
-            <h3 class="alignstart">ԱՆՀԱՂԹԱՀԱՐԵԼԻ ՈՒԺԻ ԱԶԴԵՑՈՒԹՅՈՒՆԸ &#40;ՖՈՐՍ &#45; ՄԱԺՈՐ&#41;</h3>
-                <p class="alignstart-p">Սույն պայմանագրով պարտավորություններն ամբողջությամբ կամ մասնակիորեն չկատարելու համար կողմերն ազատվում են պատասխանատվությունից, եթե դա եղել է անհաղթահարելի ուժի ազդեցության արդյունք, որը ծագել է սույն պայմանագիրը կնքելուց հետո, և որը կողմերը չէին կարող կանխատեսել կամ կանխարգելել: Այդպիսի իրավիճակներ են երկրաշարժը, ջրհեղեղը, հրդեհը, պատերազմը, ռազմական և արտակարգ դրություն հայտարարելը, քաղաքական հուզումները, գործադուլները, հաղորդակցության միջոցների աշխատանքի դադարեցումը, պետական մարմինների ակտերը և այլն, որոնք անհնարին են դարձնում սույն պայմանագրով պարտավորությունների կատարումը: Եթե արտակարգ ուժի ազդեցությունը շարունակվում է 3 (երեք) ամսից ավելի, ապա կողմերից յուրաքանչյուրն իրավունք ունի լուծել պայմանագիրը` այդ մասին նախապես տեղյակ պահելով մյուս կողմին:</p>      
-          </div>
-
-        </div>
-
-
-
+      <div class="wrapper">
+  <div class="container">
+    <div class="grid-row">
+      <div class="colmunimage colmun-left">
+       
+       
+        <img src="img/image-left.png" alt="image-left">
+       
+        <h1 class="px-spc-b-20">Մենք չենք կարող գտնել այն էջը, որը փնտրում եք:</h1>
+        <span class="px-spc-b-20">Այս էջը տեղափոխվել կամ հեռացվել է:</span>
+        <br>
+        <a class="button-form" href="index.html" ><button style="background-color: #FFB200; border: none; margin-top: 10px; border-radius: 25px; color: #fff" class="link-btn">Գնա տուն</button></a>   
+        
       </div>
+      <div class="colmun colmun-right">
+         <img src="img/ooops.jpg">
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <footer>
@@ -213,41 +136,42 @@
           <div class="span4">
             <div class="widget">
               <h5 class="widgetheading">Կապվեք</h5>
-                <address>
-							<strong>Golden Design Agency</strong><br>
-							2 Կ. Ուլնեցու 1<br>
-							
-                </address>
-              
-                <p><i class="icon-phone"></i>  (+374)95-818-921 - (+374)96-965-874<br>
-                <i class="icon-envelope-alt"></i>  golden.design01@mail.ru</p>
-              
+              <address>
+                <strong>Golden Design Agency</strong><br>
+                2 Կ. Ուլնեցու 1<br>
+
+              </address>
+
+              <p><i class="icon-phone"></i> (+374)95-818-921 - (+374)96-965-874<br>
+                <i class="icon-envelope-alt"></i> golden.design01@mail.ru
+              </p>
+
             </div>
           </div>
           <div class="span4">
-          <div class="widget">
+            <div class="widget">
               <h5 class="widgetheading">Բաժանորդագրվեք մեզ</h5>
-              
+
               <ul class="media-links">
-                  <a href="#"><img style="margin: 0px;" class="links" src="ico/instagram.png"></a>
-                  <a href="#"><img class="links" src="ico/facebook.png"></a>
-                  <a href="#"><img class="links" src="ico/telegram.png"></a>
-                  
+                <a href="#"><img style="margin: 0px;" class="links" src="ico/instagram.png"></a>
+                <a href="#"><img class="links" src="ico/facebook.png"></a>
+                <a href="#"><img class="links" src="ico/telegram.png"></a>
+
               </ul>
-                  <br>
-                   <div class="widget">
+              <br>
+              <div class="widget">
                 <h5 class="widgetheading">Կապ մասնագետի հետ<span></span></h5>
-                   <div class="media-links">
-                    <a href="viber://chat?number=&#43;37496965874"><img src="img/viber.png"  width="24px;" height="24px;"alt=""></a>
-                    <a href="https://wa.me/+37496965874"><img class="links" src="img/whatsapp.png" width="24px" height="24px" alt=""></a>
-                    </div>
+                <div class="media-links">
+                  <a href="viber://chat?number=&#43;37496965874"><img src="img/viber.png" width="24px;" height="24px;" alt=""></a>
+                  <a href="https://wa.me/+37496965874"><img class="links" src="img/whatsapp.png" width="24px" height="24px" alt=""></a>
+                </div>
                 <ul class="contact-info">
-                  
+
                 </ul>
 
               </div>
-           
-          </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -261,7 +185,7 @@
 
             </div>
 
-         <div class="span6">
+            <div class="span6">
               <div class="credits">
                 Designed by <a href="https://www.facebook.com/golden.design01">Harutyun Chalikyan</a>
               </div>
@@ -295,7 +219,7 @@
 
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
-
+<script src="js/header.js"></script>
 </body>
 
 </html>
