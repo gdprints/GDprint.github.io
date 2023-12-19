@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="hero-head">
+	
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- start header -->
+		<header class="hero-header">
+			
+		</header>
+
+		<section id="inner-headline">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="inner-heading">
+							<div class="buttons-container">
+								<button id="save">Պահպանել</button>
+								<button onclick="print" id="print">Տպել</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="content">
+			<div class="container">
+				<div class="row">
+    <div class="container">
+      <div class="card input-wrapper">
+        <div class="from">
+          <span class="heading">From :</span>
+          <div class="dropdown-container" id="input-language">
+            <div class="dropdown-toggle">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span class="selected" data-value="auto">Auto Detect</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <ul style="border: none; color: black;" class="dropdown-menu">
+              <li class="option active">DropDown Menu Item 1</li>
+              <li class="option">DropDown Menu Item 2</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-area">
+          <textarea
+            id="input-text"
+            cols="30"
+            rows="10"
+            placeholder="Մուտքագրեք ձեր տեքստը այստեղ"
+          ></textarea>
+          <div class="chars"><span id="input-chars">0</span> / 5000</div>
+        </div>
+        <div class="card-bottom">
+          <p>Կամ ընտրեք ձեր փաստաթուղթը:</p>
+          <label for="upload-document">
+            <span id="upload-title">Ընտրել ֆայլը</span>
+            <ion-icon name="cloud-upload-outline"></ion-icon>
+            <input type="file" id="upload-document" hidden />
+          </label>
+        </div>
+      </div>
+
+      <div class="center">
+        <div class="swap-position">
+          <ion-icon name="swap-horizontal-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="card output-wrapper">
+        <div class="to">
+          <span class="heading">To :</span>
+          <div class="dropdown-container" id="output-language">
+            <div class="dropdown-toggle">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span class="selected" data-value="en">Englsih</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <ul style="border: none;" class="dropdown-menu">
+              <li class="option active">DropDown Menu Item 1</li>
+              <li class="option">DropDown Menu Item 2</li>
+            </ul>
+          </div>
+        </div>
+        <textarea
+          id="output-text"
+          cols="30"
+          rows="10"
+          placeholder="Թարգմանված տեքստը կհայտնվի այստեղ"
+          disabled
+        ></textarea>
+        <div class="card-bottom">
+          <p>Ներբեռնեք որպես փաստաթուղթ:</p>
+          <button id="download-btn">
+            <span>Ներբեռնել</span>
+            <ion-icon name="cloud-download-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/languages.js"></script>
+    <script src="js/translate.js"></script>
+
+				</div>
+			</div>
+		</section>
+
+		<footer class="hero-footer">
+			
+		</footer>
+	</div>
+	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
+
+	<!-- javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/translate.js"></script>
+	<script src="js/languages.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/toucheffects.js"></script>
+	<script src="js/google-code-prettify/prettify.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/portfolio/jquery.quicksand.js"></script>
+	<script src="js/portfolio/setting.js"></script>
+
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/inview.js"></script>
+	<script src="js/head.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<!-- Template Custom JavaScript File -->
+	<script src="js/custom.js"></script>
+	<script src="form-large.html"></script>
+	<script src="index.js"></script>
+	<script src="html2canvas.js"></script>
+	
+</body>
+
+</html>
