@@ -17,6 +17,8 @@
 	<link href="css/camera.css" rel="stylesheet" />
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<link href="css/popup.css" rel="stylesheet">
+	<link href="css/modal.css" rel="stylesheet" />
+	<link href="css/thank.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 
 	<!-- Theme skin -->
@@ -71,7 +73,7 @@
 	
 -->
 		<!-- start header -->
-		 <header class="hero-header"></header>
+		<header class="hero-header"></header>
 
 
 		<!-- section featured -->
@@ -154,25 +156,52 @@
 						<div class="overlay"></div>
 						<div class="content-1">
 							<div class="close-btn" onclick="togglePopup1()">&times;</div>
-							<h3>Բարձրորակ տպագրություն</h3>
-							<p>«GOLDEN ԱՌՑԱՆՑ ՏՊԱՐԱՆ»-ը ջանք ու եռանդ չի խնայում ստեղծելու ամենաորակյալ և տեսանելի գովազդները յուրաքանչյուր հաճախորդի համար։ Հագեցած լինելով արդի սարքավորումներով և հմուտ մասնագետներով մենք աշխատանքներին կարողանում ենք տալ բարձր որակ: Կարևորելով ձեր ժամանակը, աշխատանքները պատրաստվում են սեղմ ժամկետներում: Մեզ մոտ շունչ կառնի ամեն տեսակ մտահաղացում, իսկ հմուտ դիզայներներն կառաջարկեն ամենակրեատիվ և ժամանակակից գովազդի տարբերակները ձեր բիզնեսի համար:</p>
-						</div>
-					</div>
 
-					<div class="popup2" id="popup-2">
-						<div class="overlay"></div>
-						<div class="content-2">
-							<div class="close-btn" onclick="togglePopup2()">&times;</div>
 
-							<h3>Հատկանիշներով հարուստ</h3>
-							<h4>Մեզ դիմելու առավելություններն են</h4>
-							<p>1. 24/7
-								Հաճախորդների աջակցման կենտրոն<br>
-								2. Անվճար այց ձեր նշած հասցե:<br>
-								3. Մատչելի գներով առաքման ծառայություն<br>
-								4. Տրամաբանական գներ:<br>
-								5. Անթերի որակ:<br>
-								6. Մինիմալ ժամկետներ:</p>
+
+
+							<form action="https://formspree.io/f/mayzpapb" method="POST">
+
+								<div class="form first">
+									<div class="details personal">
+										<!--                                    <h4>Պատվերի գրանցման ձևաթուղտ</h4>-->
+
+										<div class="input-js">
+											<div class="field-js">
+
+												<input name="Անուն" type="text" placeholder="Անուն" required>
+											</div>
+
+											<div class="field-js">
+
+												<input name="Ազգանուն" type="text" placeholder="Ազգանուն" required>
+											</div>
+
+											<div class="field-js">
+
+												<input name="Հեռախոսահամար" type="tel" placeholder="096965874" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+											</div>
+
+											<div class="field-js">
+
+												<input name="Էլ հասցե" type="email" placeholder="Էլ հասցե" required>
+											</div>
+											<input type="hidden" name="_template" value="table">
+											<input type="hidden" name="_captcha" value="false">
+											<input type="hidden" name="_next" value="https://gdprint.github.io/Thank_you.html">
+										</div>
+										<div class="buttons-container">
+											<button id="save" class="btn btn-theme margintop10" type="submit">Բաժանորդագրվել</button>
+										</div>
+
+									</div>
+
+								</div>
+
+
+							</form>
+
+
 						</div>
 					</div>
 					<div class="span12">
@@ -183,14 +212,14 @@
 										<i style="background-color: goldenrod" class="ico icon-circled icon-bgdark icon-star active icon-3x"></i>
 									</div>
 									<div class="text">
-									
+
 										<h4>Բարձրորակ<br><strong>տպագրություն</strong></h4>
 										<p>
 											Մենք աշխատում ենք միայն եվրոպական բարձրորակ նյութերով:
 										</p>
-					
-										<button class="onc" onclick="togglePopup1()">Կարդալ ավելին</button>
-										
+
+
+
 									</div>
 								</div>
 							</div>
@@ -205,7 +234,7 @@
 										<p>
 											Առաջարկում ենք պատվերների գրանցման առցանց տարբերակ:
 										</p>
-										<button class="onc" onclick="togglePopup2()">Կարդալ ավելին</button>
+										<!--										<button class="onc" onclick="togglePopup2()">Կարդալ ավելին</button>-->
 									</div>
 								</div>
 							</div>
@@ -239,7 +268,7 @@
 							<div class="span12">
 								<div class="aligncenter">
 									<h3>Մեր <strong>գները</strong></h3>
-									<p class="mini">Մեր գնային քաղաքականությունը կազմված է ըստ մատուցվող ծառայությունների և <br> տպագրությանը ենթակա նյութի կյանքի տևողությունը հաշվի առնելով:
+									<p class="mini">Մեր գնային քաղաքականությունը կազմված է ըստ մատուցվող ծառայությունների և <br>տպագրությանը ենթակա նյութի կյանքի տևողությունը հաշվի առնելով:
 									</p>
 								</div>
 								<form class="formcalc contactForm" name="formcalc">
@@ -289,7 +318,7 @@
 										</ul>
 									</div>
 									<div class="pricing-action">
-									<a href="de701f8favai99blable95cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>
+										<a href="de701f8favai99blable95cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>
 									</div>
 								</div>
 							</div>
@@ -313,7 +342,7 @@
 										</ul>
 									</div>
 									<div class="pricing-action">
-									<a href="de701f8favaecoi99nomblable96cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>	
+										<a href="de701f8favaecoi99nomblable96cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>
 									</div>
 								</div>
 							</div>
@@ -347,7 +376,7 @@
 										</ul>
 									</div>
 									<div class="pricing-action">
-									<a href="de701f8favaecoi88prenomiumblable962cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>	
+										<a href="de701f8favaecoi88prenomiumblable962cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>
 									</div>
 								</div>
 							</div>
@@ -371,7 +400,7 @@
 										</ul>
 									</div>
 									<div class="pricing-action">
-									<a href="de701f8LDfavaecoi88GOnomiumblable962cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>	
+										<a href="de701f8LDfavaecoi88GOnomiumblable962cc.html" class="btn btn-medium btn-theme"><i class="icon-bolt"></i> Գրանցել պատվեր</a>
 									</div>
 								</div>
 							</div>
@@ -417,26 +446,26 @@
 									<h4>Անահիտ Բալայան</h4>
 								</div>
 							</li>
-						               <li>
-                				<blockquote>
-                  					✅Լսում են հաճախորդին։ <br>
-				     				✅Առաջարկում մի շարք տարբերակներ, լուծումներ։ <br>
-				     				✅Պատասխանում են օրվա բոլոր ժամերին, նույնիսկ՝ ոչ աշխատանքային։ <br>
-				     				✅Կարևորում են հաճախորդի կարծիքը։ <br>
-				     				✅Կարճ ասած՝ գոհ եմ և շնորհակալ, էլի կհանդիպենք։)
-                				</blockquote>
-                			<div class="testimonial-autor">
-                  				<img src="img/dummies/testimonial/anjel.jpg" width="50px" height="50px" alt="" />
-                  					<h4>Անժելա Մանասյան</h4>
-                				</div>
-              				</li> 
+							<li>
+								<blockquote>
+									✅Լսում են հաճախորդին։ <br>
+									✅Առաջարկում մի շարք տարբերակներ, լուծումներ։ <br>
+									✅Պատասխանում են օրվա բոլոր ժամերին, նույնիսկ՝ ոչ աշխատանքային։ <br>
+									✅Կարևորում են հաճախորդի կարծիքը։ <br>
+									✅Կարճ ասած՝ գոհ եմ և շնորհակալ, էլի կհանդիպենք։)
+								</blockquote>
+								<div class="testimonial-autor">
+									<img src="img/dummies/testimonial/anjel.jpg" width="50px" height="50px" alt="" />
+									<h4>Անժելա Մանասյան</h4>
+								</div>
+							</li>
 						</ul>
 
 					</div>
 				</div>
 
 			</div>
-        </section>
+		</section>
 		<section id="works">
 			<div class="container">
 				<div class="row">
@@ -445,7 +474,7 @@
 						<div class="row">
 
 							<div class="grid cs-style-4">
-							    <div class="span3">
+								<div class="span3">
 									<div class="item">
 										<figure>
 											<div><img src="img/dummies/works/17.jpg" alt="" /></div>
@@ -508,80 +537,7 @@
 				</div>
 			</div>
 		</section>
-	
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="span4">
-						<div class="widget">
-							<h5 class="widgetheading">Թերթիր էջերը</h5>
-							<ul class="link-list">
-								<li><a href="about.html">Մեր Ընկերությունը</a></li>
-                              <li><a href="404.html">Ընդհանուր դրույթներր և պայմանները</a></li>
-								<li><a href="portfolio-4cols.html">Այն, ինչ մենք արել ենք</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="span4">
-						<div class="widget">
-							<h5 class="widgetheading">Կապվեք</h5>
-							<address>
-								<strong>Golden Design Agency</strong><br>
-								2 Կ. Ուլնեցու 1<br>
-
-							</address>
-
-							<p><i class="icon-phone"></i> (+374)95-818-921 - (+374)96-965-874<br>
-								<i class="icon-envelope-alt"></i> golden.design01@mail.ru
-							</p>
-
-						</div>
-					</div>
-					<div class="span4">
-						<div class="widget">
-							<h5 class="widgetheading">Բաժանորդագրվեք մեզ</h5>
-
-							<ul class="media-links">
-								<a href="https://www.instagram.com/golden.design01/"><img style="margin: 0px;" class="links" src="ico/instagram.png"></a>
-								<a href="https://www.facebook.com/golden.design01"><img class="links" src="ico/facebook.png"></a>
-								<a href="#"><img class="links" src="ico/telegram.png"></a>
-							</ul>
-
-						</div>
-						<br>
-						<div class="widget">
-							<h5 class="widgetheading">Կապ մասնագետի հետ<span></span></h5>
-							<div class="media-links">
-								<a href="viber://chat?number=&#43;37496965874"><img src="img/viber.png" width="24px;" height="24px;" alt=""></a>
-								<a href="https://wa.me/+37496965874"><img class="links" src="img/whatsapp.png" width="24px" height="24px" alt=""></a>
-							</div>
-							<ul class="contact-info">
-
-							</ul>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="sub-footer">
-				<div class="container">
-					<div class="row">
-						<div class="span6">
-							<div class="copyright">
-								<p><span>&copy; Golden Design agency.</span></p>
-							</div>
-
-						</div>
-
-						<div class="span6">
-							<div class="credits">
-								Designed by <a href="https://www.facebook.com/golden.design01">Harutyun Chalikyan</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+	<footer class="hero-footer"></footer>
 	</div>
 	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
 
@@ -608,8 +564,11 @@
 	<script src="js/animate.js"></script>
 	<script src="js/inview.js"></script>
 	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
 
 	<!-- Template Custom JavaScript File -->
 	<script src="js/custom.js"></script>
 
-</body></html>
+</body>
+
+</html>
