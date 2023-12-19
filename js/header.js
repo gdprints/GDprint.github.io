@@ -11,7 +11,7 @@ const createheader = () => {
             <div class="span6">
               
               <ul class="social-network">
-                <p class="topcontact"><i class="bi bi-alarm-fill"></i> 09:00-19:00</p>
+                <p class="topcontact"><i class="bi bi-alarm-fill"></i> 09:00-18:00</p>
               </ul>
             </div>
           </div>
@@ -44,9 +44,6 @@ const createheader = () => {
                     <li class="dropdown">
                       <a href="portfolio-4cols.html">Պորտֆոլիո</a>
                   
-                    </li>
-                    <li class="dropdown ">
-                      <a href="blog-left-sidebar.html">Բլոգ</a>
                     </li>
                     <li>
                       <a href="contact.html">Կապ</a>
