@@ -1,0 +1,154 @@
+@media (max-width: 375px){
+    #content #save_to_image {
+        padding: 10px;
+    }
+    #save_to_image h3{
+        font-size: 18px;
+        text-align: center;
+        padding: 5px 0;
+    }
+    #save_to_image form{
+        margin-left: -10px;
+    }
+    .input-field{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .input-field label{
+        font-weight: 600;
+        font-size: 14px;
+        margin: 8px 0px;
+    }
+    .input-field input,select{
+        width: 90%;
+    }
+    .input-field .select, #padding{
+        width: 100%;
+    }
+}
+@media (min-width: 360px) and (max-width: 393px){
+
+    #save_to_image form{
+        margin-left: 0px;
+    }
+    .input-field{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        justify-content: flex-start;
+    }
+    .input-field label{
+        font-weight: 600;
+        font-size: 14px;
+        margin: 8px 0px;
+    }
+    .input-field input,select{
+        width: 80%;
+    }
+    .input-field .select, #padding{
+        width: 90%;
+    }
+}
+@media (max-width: 412px){
+    #content #save_to_image {
+        padding: 10px;
+    }
+    #save_to_image h3{
+        font-size: 18px;
+        padding: 5px 0px;
+        text-align: center;
+    }
+    #save_to_image h4{
+        font-size: 16px;
+    }
+    .input-field label{
+        font-weight: 600;
+        font-size: 14px;
+        margin: 8px 0px;
+    }
+    .input-field input,select{
+        width: 100%;
+    }
+    .input-field .select, #padding{
+        width: 100%;
+    }
+}
+@media (max-width: 540px){
+    #save_to_image h3{
+        font-size: 28px;
+        padding: 5px 0px;
+        text-align: center;
+    }
+    #save_to_image h4{
+        font-size: 20px;
+    }
+    .input-field label{
+        font-weight: 600;
+        font-size: 14px;
+        margin: 8px 0;
+    }
+     .input-field input,select{
+        width: 90%;
+    }
+    .input-field .select, #padding{
+        width: 97%;
+    }
+    
+}
+
+
+
+@media (max-width: 768px){
+    #save_to_image h3{
+        text-align: center;
+        font-size: 36px;
+    }
+    #save_to_image h4{
+        font-size: 22px;
+        
+    }
+    .input-field label{
+        font-weight: 600;
+        font-size: 11.5px;
+    }
+}
+@media (max-width: 912px){
+    #save_to_image h3{
+        font-size: 36px;
+        text-align: center;
+    }
+    #save_to_image h4{
+        font-size: 26px;
+    }
+     .input-field label{
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+@media (max-width: 280px){
+    #save_to_image h3{
+        font-size: 13.5px;  
+    }
+    #save_to_image h4{
+        font-size: 12px; 
+        padding: 0;
+        margin: 0;
+    }
+    .input-field{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        justify-content: flex-start;
+    }
+      .input-field input,select{
+        width: 90%;
+    }
+    .input-field .select, #padding{
+        width: 107%;
+    }
+    #save_to_image form{
+        margin: 0px -10px;
+    }
+}
