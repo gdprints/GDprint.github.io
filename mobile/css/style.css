@@ -208,7 +208,10 @@ header .top p.topcontact {
 	font-weight: 600;
 	font-size: 16px;
 }
-
+header .top p.topcontact .callme {
+	text-decoration: none;
+	color: #fff;
+}
 header .top p.topcontact i {
 	color: #ddd;
 }
