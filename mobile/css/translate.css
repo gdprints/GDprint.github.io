@@ -7,17 +7,11 @@
 	--primary-text-color: #fff;
 }
 
-.container {
-	position: relative;
-	width: 1200px;
-	padding: 0 20px;
-	display: flex;
-	gap: 10px;
-}
+
 
 .container .card {
 	flex: 1;
-	padding: 30px;
+	padding: 30px 0 0px;
 	border-radius: 20px;
 	background-color: var(--light-bg-color);
 }
@@ -285,15 +279,16 @@
 	height: 20px;
 }
 
-media quiries @media (max-width: 800px) {
+media quiries @media (max-width: 375px) {
 	.container {
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 10px;
 		flex-direction: column;
 	}
 
 	.container .card {
 		width: 100%;
+		padding: 0;
 	}
 
 	.container .card .from {
@@ -309,15 +304,15 @@ media quiries @media (max-width: 800px) {
 		flex-direction: column;
 	}
 
+
 	.swap-position {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
 
-	.swap-position:hover {
-		transform: translate(-50%, -50%) scale(1.1);
-	}
+
+	
 
 	.swap-position ion-icon {
 		transform: rotate(90deg);
