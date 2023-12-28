@@ -186,10 +186,10 @@ img.img-polaroid {
 /* --- header -- */
 
 header {
-	background: #fff;
+	background: #DEDEDE;
 	margin: 0px;
 	height: auto;
-	padding: 0px 0px 5px;
+	padding: 0px 0px 10px;
 	position: relative;
 	z-index: 2000;
 	-webkit-box-shadow: 0 2px 4px -2px #ddd;
@@ -198,15 +198,19 @@ header {
 }
 
 header .top {
-	padding: 10px 0 10px;
-	margin: 0 0 30px;
+	padding: 10px 0px 10px;
+	margin: 0 0 10px;
 	background: black;
 }
 
 header .top p.topcontact {
 	color: #FFFFFF;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 14px;
+}
+header .top p.topcontact .callme {
+	text-decoration: none;
+	color: #fff;
 }
 
 header .top p.topcontact i {
@@ -218,7 +222,7 @@ header .logo {
 }
 
 header .logo img {
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 header .logo h1 {
@@ -230,7 +234,7 @@ header .logo h1 {
 }
 
 header .logo h1 a {
-	color: #333;
+	color: gold;
 }
 
 header .logo h1 a:hover {
@@ -253,7 +257,7 @@ ul.topmenu li {
 }
 
 ul.topmenu li a {
-	font-size: 12px;
+	font-size: 14px;
 	color: #ddd;
 	font-weight: 600;
 }
