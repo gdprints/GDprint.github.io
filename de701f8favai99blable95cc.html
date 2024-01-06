@@ -74,8 +74,72 @@
 	</script>
   <div id="wrapper">
 
-                 <!-- start header -->
-   <header class="hero-header"></header>
+       <header>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <p class="topcontact"><a style="text-decoration: none; color: #fff; 
+              margin-top: 10px; " href="tel:+37496965874"> <i class="icon-phone"></i> +37496965874</a></p>
+            </div>
+            <div class="span6">
+              <ul class="social-network">
+                <p class="topcontact"><i class="bi bi-alarm-fill"></i> 09:00-18:00</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+
+        <div class="row nomargin">
+          <div class="span4">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="dropdown">
+                      <a href="index.html">Տուն</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="about.html">Մեր մասին</a>
+                    </li>
+                    <li class="dropdown active">
+                      <a href="services.html">Ծառայություններ</a>
+                   
+                    </li>
+                    <li class="dropdown">
+                      <a href="portfolio-4cols.html">Պորտֆոլիո</a>
+                  
+                    </li>
+                    <li class="dropdown">
+                      <a href="contact.html">Կապ</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Այլ<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown"><a href="team.html">Թիմ</a>
+                        <li class="dropdown"><a href="regulations.html">Կանոնակարգ</a>
+                        <li class="dropdown"><a href="faq.html">Հարց ու պատասխան</a>
+                        <li class="dropdown"><a href="pricingbox.html">Գնային տուփ</a>
+                     
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <section id="inner-headline">
       <div class="container">
         <div class="row">
@@ -116,7 +180,7 @@
 
                         <div class="input-field">
                             <label>Հեռ. համար</label>
-                            <input name="Հեռախոսահամար" type="tel" placeholder="095818921" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+                            <input name="Հեռախոսահամար" type="tel" placeholder="096965874" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
                         </div>
 
                         <div class="input-field">
@@ -160,9 +224,11 @@
                         <label>Պատվերի նկարագրություն</label>
                         <textarea name="Հաղորդակցություն" cols="160" rows="8" placeholder="Պատվերի նկարագրություն"></textarea>
                         </div>
-                        <input type="hidden" name="_template" value="table">
+                          <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://gdprint.github.io/Thank_you.html">
+                        <input type="hidden" name="_autoresponse" value="Ձեր պատվերը հաջողությամբ գրանցվել է ">
+                        <input type="hidden" name="_subject" value="Լայնաֆորմատ տպագրություն">
+                        <input type="hidden" name="_next" value="https://gdprint.github.io/services.html">
                         
                         <button style="margin-left:  0;" id="save" class="btn btn-theme btn-medium margintop10 button" type="submit">Ուղարկել</button>
                         
@@ -186,9 +252,102 @@
       </div>
     </section>
 
-    <footer class="hero-footer">
-    
-    </footer>
+    	<footer>
+			<div class="container">
+				<div class="row">
+					<div class="span4">
+						<div class="widget">
+							<h5 class="widgetheading">Թերթիր էջերը</h5>
+							<ul class="link-list">
+								<li><a href="about.html">Մեր Ընկերությունը</a></li>
+								<li><a href="regulations.html">Ընդհանուր դրույթներր և պայմանները</a></li>
+								<li><a href="portfolio-4cols.html">Այն, ինչ մենք արել ենք</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="widget">
+							<h5 class="widgetheading">Կապվեք</h5>
+
+							<strong>GOLDEN Առցանց տպարան</strong>
+
+							<p><i class="icon-phone"></i> (+374)96-965-874<br>
+								<i class="icon-envelope-alt"></i> golden.design01@mail.ru
+							</p>
+						</div>
+					</div>
+					<div class="span4">
+						<h5 class="widgetheading">Բաժանորդագրվեք մեզ</h5>
+						<p>Մուտքագրեք ձեր էլ. փոստը և բաժանորդագրվեք մեր տեղեկագրին:</p>
+
+						<a href="#myModal" role="button" class="btn btn-theme btn-medium margintop10" data-toggle="modal">Բաժանորդագրվել</a>
+
+						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<img src="img/logo.png" width="48px;" alt="">
+							</div>
+							<div class="modal-body">
+								<div class="icon-modal">
+									<i class="bi bi-envelope-heart-fill"></i>
+								</div>
+								<form action="https://formsubmit.co/de701f8f99b95cc68adb30aba921d3e0" method="POST">
+
+									<div class="form first">
+										<div class="details personal">
+											<div class="fields">
+												<div class="input-field">
+													<!--													<label>Անուն &#42;</label>-->
+													<input name="Անուն" type="text" placeholder="Անուն" required>
+												</div>
+												<div class="input-field">
+													<!--													<label>Ազգանուն &#42;</label>-->
+													<input name="Ազգանուն" type="text" placeholder="Ազգանուն" required>
+												</div>
+												<div class="input-field">
+													<!--													<label>Հեռ. համար &#42;</label>-->
+													<input name="Հեռախոսահամար" type="tel" placeholder="096965874" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+												</div>
+												<div class="input-field">
+													<!--													<label>Էլ հասցե &#42;</label>-->
+													<input name="Էլ հասցե" type="email" placeholder="Էլ հասցե" required>
+												</div>
+												<input type="hidden" name="_template" value="table">
+												<input type="hidden" name="_captcha" value="false">
+												<input type="text" name="_honey" style="display:none">
+												<input type="hidden" name="_autoresponse" value="your custom message">
+												<input type="hidden" name="_next" value="https://gdprint.github.io/Thank_you.html">
+												<div class="buttons-container">
+													<button class="btn btn-theme" type="submit">Բաժանորդագրվել</button>
+												</div>
+												<ul class="svg-link">
+													<a href="https://www.instagram.com/golden.design01/"><i id="svg" class="bi bi-instagram"></i></a>
+													<a href="https://www.facebook.com/profile.php?id=100076392072210"><i id="svg" class="bi bi-facebook"></i></a>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Փակել</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<div class="copyright">
+								<p><span>&copy; Բոլոր իրավունքները պաշտպանված են</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
   </div>
   <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
 
