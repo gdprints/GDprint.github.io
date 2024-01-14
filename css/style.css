@@ -526,6 +526,7 @@ select.selectmenu {
 #content img {
 	max-width: 100%;
 	height: auto;
+	margin: 0px;
 }
 
 /* --- Call to action --- */
