@@ -1,0 +1,80 @@
+.container .time-content {
+    display: flex;
+    column-gap: 30px;
+    justify-content: flex-start;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.time-content .time {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time .number,
+.time .text {
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    margin: 5px;
+}
+
+.time .number {
+    font-size: 40px;
+}
+
+.time .text {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    max-width: 360px;
+    width: 100%;
+    margin-top: 20px;
+    column-gap: 20px;
+}
+
+.input-box input,
+.input-box button {
+    height: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 0 15px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+.input-box button {
+    cursor: pointer;
+    color: #fff;
+    white-space: nowrap;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.input-box button:hover {
+    background-color: #fff;
+    color: #0d6a81;
+}
+
+@media screen and (max-width: 300px) {
+    .container header {
+        font-size: 50px;
+    }
+}

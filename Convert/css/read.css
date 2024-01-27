@@ -1,0 +1,32 @@
+/*card-1*/
+.post-entry{
+	padding: 0;
+	box-sizing: border-box;
+	transition: 1s;
+}
+.card{
+	background-color: #fff;
+	width: 100%;
+	padding: 0em ;
+	transition: 1s;
+    
+}
+#checkbox:checked ~ .content{
+	display: block;
+}
+#checkbox:checked ~ label{
+	display: none;
+}
+.invisible-content{
+	display: block;
+}
+.content .bold{
+	font-weight: 600;
+}
+#checkbox{
+	display: none;
+}
+label{
+	display: inline-block;
+	cursor: pointer;
+}
