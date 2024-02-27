@@ -1,9 +1,17 @@
-const uploadInput = document.querySelector('#upload-input') ;
-const previewImg = document.querySelector('.upload-img img') ;
-
-uploadInput.addEventListener('change',e => {
-    if(e.target.files.length > 0) {
-        const url = URL.createObjectURL(e.target.files[0]) ;
-        previewImg.src = url ;
+function previewBeforeUpload(id){
+  document.querySelector("#"+id).addEventListener("change",function(e){
+    if(e.target.files.length == 0){
+      return;
     }
-})
+    let file = e.target.files[0];
+    let url = URL.createObjectURL(file);
+//    document.querySelector("#"+id+"-preview div").innerText = file.name;
+    document.querySelector("#"+id+"-preview img").src = url;
+  });
+}
+
+previewBeforeUpload("file-1");
+previewBeforeUpload("file-2");
+previewBeforeUpload("file-3");
+
+ 
