@@ -222,7 +222,8 @@ header .logo {
 }
 
 header .logo img {
-	margin-bottom: 10px;
+	width: 200px;
+	margin-right: 10px;
 }
 
 header .logo h1 {
