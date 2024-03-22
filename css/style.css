@@ -4594,3 +4594,47 @@ nav > a {
 		font-size: 24px;
 	}
 }
+
+
+/*new testiminal*/
+.card-slider {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.card-slide {
+	display: none;
+}
+
+.card-slide.active {
+	display: block;
+	animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.card {
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+	.card {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
