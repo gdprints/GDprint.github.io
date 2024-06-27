@@ -73,6 +73,40 @@
 		}(document, 'script', 'facebook-jssdk'));
 
 	</script>
+		 <!-- Popup -->
+		
+    <div id="popup" class="popup">
+    <div class="popup-content">
+       <span class="close-btn" id="close-btn">&times;</span>
+      <img src="img/ads%20post.jpg" alt="">
+    </div>
+  </div>
+     
+    <script>
+		document.addEventListener("DOMContentLoaded", function() {
+    var popup = document.getElementById("popup");
+    var closeBtn = document.getElementById("close-btn");
+
+    // Show popup after 3 seconds
+    setTimeout(function() {
+        popup.style.display = "flex";
+    }, 3000);
+
+    // Close popup when close button is clicked
+    closeBtn.onclick = function() {
+        popup.style.display = "none";
+    };
+
+    // Close popup when clicking outside of the popup content
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    };
+});
+
+	</script>
+
 	<div id="wrapper">
 		<header>
 			<div class="top">
