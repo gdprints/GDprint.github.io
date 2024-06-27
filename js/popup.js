@@ -236,5 +236,26 @@ function printCV(){
     window.print();
 }                                                                        
 
+document.addEventListener("DOMContentLoaded", function() {
+    var popup = document.getElementById("popup");
+    var closeBtn = document.getElementById("close-btn");
+
+    // Show popup after 3 seconds
+    setTimeout(function() {
+        popup.style.display = "flex";
+    }, 3000);
+
+    // Close popup when close button is clicked
+    closeBtn.onclick = function() {
+        popup.style.display = "none";
+    };
+
+    // Close popup when clicking outside of the popup content
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    };
+});
                                                           
 
