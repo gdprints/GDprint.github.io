@@ -19,6 +19,7 @@
 	<link href="css/popup.css" rel="stylesheet">
 	<link href="css/modal.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
+	<link href="test.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 	<!-- Theme skin -->
 	<link href="color/default.css" rel="stylesheet" />
@@ -33,8 +34,9 @@
 	<!-- Boostrap -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-	<script src="//code.jivo.ru/widget/WhqPbxueJD" async></script>
+
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
+	<script src="//code.jivo.ru/widget/WhqPbxueJD" async></script>
 </head>
 
 <body onload="checkCookie()">
@@ -107,6 +109,19 @@
 
 	</script>
 
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    // Show popup after 3 seconds
+    setTimeout(function() {
+        document.getElementById('popup').style.display = 'block';
+    }, 3000);
+
+    // Close popup when close button is clicked
+    document.getElementById('closeBtn').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'none';
+    });
+});
+</script>
 	<div id="wrapper">
 		<header>
 			<div class="top">
@@ -870,15 +885,18 @@
 	<script src="js/animate.js"></script>
 	<script src="js/inview.js"></script>
 	<script src="js/read.js"></script>
+	<script src="js/kinder.js"></script>
 
 
 	<!-- Template Custom JavaScript File -->
 	<script src="js/custom.js"></script>
+<!--
 	<script>
     window.addEventListener('contextmenu', function (e) {
         e.preventDefault();
     });
 </script>
+-->
 
 </body>
 
