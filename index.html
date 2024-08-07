@@ -3,14 +3,13 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>GDprinting Տպագրական պատվերների գրանցման կայք </title>
+	<title>GOLDEN | ԱՌՑԱՆՑ ՏՊԱՐԱՆ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="GOLDEN ԱՌՑԱՆՑ ՏՊԱՐԱՆԸ կատարում է ցանկացած տեսակի տպագրական
-	աշխատանքներ։ Դիզայն, ֆայլերի պատրաստում, չափագրում, ինքնակպչուն
-	թաղանթների փակցման և բաներների տեղադրման, ամրացման աշխատանքներ։
-	Երաշխավորում ենք անթերի և բարձրորակ տպագրություն։ 
-	#print #xerox #Պլոտեռային_հատում #Kinderbox #Օֆսետ #A4բլանկ #Պիտակներ" />
-	<meta name="author" content="Տպագրական պատվերների գրանցման հարթակ" />
+										աշխատանքներ։ Դիզայն, ֆայլերի պատրաստում, չափագրում, ինքնակպչուն
+										թաղանթների փակցման և բաներների տեղադրման, ամրացման աշխատանքներ։
+										Երաշխավորում ենք անթերի և բարձրորակ տպագրություն։ #print #xerox #Պլոտեռային_հատում #Kinderbox #Օֆսետ #A4բլանկ #պիտակներ" />
+	<meta name="author" content="" />
 
 	<!-- css -->
 	<link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -57,7 +56,6 @@
 		var chatbox = document.getElementById('fb-customer-chat');
 		chatbox.setAttribute("page_id", "106027161928513");
 		chatbox.setAttribute("attribution", "biz_inbox");
-
 	</script>
 
 	<!-- Your SDK code -->
@@ -77,45 +75,99 @@
 			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
-
 	</script>
-    <script>
+	<!--
+		  Popup 
+		
+    <div id="popup" class="popup">
+    <div class="popup-content">
+       <span class="close-btn" id="close-btn">&times;</span>
+      <img  src="img/ads%20post.jpg" alt="">
+    </div>
+  </div>
+-->
+
+	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-    var popup = document.getElementById("popup");
-    var closeBtn = document.getElementById("close-btn");
+			var popup = document.getElementById("popup");
+			var closeBtn = document.getElementById("close-btn");
 
-    // Show popup after 3 seconds
-    setTimeout(function() {
-        popup.style.display = "flex";
-    }, 3000);
+			// Show popup after 3 seconds
+			setTimeout(function() {
+				popup.style.display = "flex";
+			}, 3000);
 
-    // Close popup when close button is clicked
-    closeBtn.onclick = function() {
-        popup.style.display = "none";
-    };
+			// Close popup when close button is clicked
+			closeBtn.onclick = function() {
+				popup.style.display = "none";
+			};
 
-    // Close popup when clicking outside of the popup content
-    window.onclick = function(event) {
-        if (event.target == popup) {
-            popup.style.display = "none";
-        }
-    };
-});
-
+			// Close popup when clicking outside of the popup content
+			window.onclick = function(event) {
+				if (event.target == popup) {
+					popup.style.display = "none";
+				}
+			};
+		});
 	</script>
-<script>
-   document.addEventListener("DOMContentLoaded", function() {
-    // Show popup after 3 seconds
-    setTimeout(function() {
-        document.getElementById('popup').style.display = 'block';
-    }, 3000);
+	<style>
+		.popup {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+		}
 
-    // Close popup when close button is clicked
-    document.getElementById('closeBtn').addEventListener('click', function() {
-        document.getElementById('popup').style.display = 'none';
-    });
-});
-</script>
+		.popup-content {
+			background-color: #fff;
+			border-radius: 5px;
+			text-align: center;
+			width: 400px;
+			height: auto;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.popup-content img {
+			width: 100%;
+		}
+
+		.close-btn {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			font-size: 30px;
+			cursor: pointer;
+		}
+
+		@media (max-width: 768px) {
+			.popup-content {
+				width: 100%;
+			}
+
+			.popup-content>img {
+				height: 90%;
+			}
+		}
+	</style>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Show popup after 3 seconds
+			setTimeout(function() {
+				document.getElementById('popup').style.display = 'block';
+			}, 3000);
+
+			// Close popup when close button is clicked
+			document.getElementById('closeBtn').addEventListener('click', function() {
+				document.getElementById('popup').style.display = 'none';
+			});
+		});
+	</script>
 	<div id="wrapper">
 		<header>
 			<div class="top">
@@ -203,7 +255,7 @@
 								</div>
 								<div class="span6">
 									<h2 class="animated fadeInDown"><strong>Լայնաֆորմատ <span class="colored">Տպագրություն</span></strong></h2>
-									<p class="animated fadeInUp"> "GOLDEN ԱՌՑԱՆՑ ՏՊԱՐԱՆԸ կատարում է ցանկացած տեսակի տպագրական
+									<p class="animated fadeInUp"> "GOLDEN ԱՌՑԱՆՑ ՏՊԱՐԱՆԸ կկատարի ցանկացած տեսակի տպագրական
 										աշխատանքներ։ Դիզայն, ֆայլերի պատրաստում, չափագրում, ինքնակպչուն
 										թաղանթների փակցման և բաներների տեղադրման, ամրացման աշխատանքներ։
 										Երաշխավորում ենք անթերի և բարձրորակ տպագրություն։</p>
@@ -296,7 +348,7 @@
 										<i class="icon-download"></i> Download
 									</a>
 								</div>
-								
+
 								<div class="span6">
 									<img src="img/slides/camera/slide2/phone.png" alt="" class="animated bounceInDown delay1" />
 								</div>
@@ -328,7 +380,7 @@
 
 								<div class="form first">
 									<div class="details personal">
-										
+										<!--                                    <h4>Պատվերի գրանցման ձևաթուղտ</h4>-->
 
 										<div class="input-js">
 											<div class="field-js">
@@ -425,7 +477,7 @@
 						<div class="solidline"></div>
 					</div>
 				</div>
-			
+
 				<div class="row">
 					<div class="span12">
 						<div class="row">
@@ -458,7 +510,6 @@
 										document.formcalc.txtres.value = res;
 
 									}
-
 								</script>
 							</div>
 						</div>
@@ -470,7 +521,7 @@
 										<h3><strong>Մատչելի</strong> փաթեթ</h3>
 									</div>
 									<div class="pricing-terms">
-										<h6>3.200դր &#124; 1 ք.մ</h6>
+										<h6>3.840դր &#124; 1 ք.մ</h6>
 									</div>
 									<div class="pricing-content">
 										<ul>
@@ -494,7 +545,7 @@
 										<h3><strong>Էկոնոմ</strong> փաթեթ</h3>
 									</div>
 									<div class="pricing-terms">
-										<h6>5.300դր &#124; 1 ք.մ</h6>
+										<h6>6.360դր &#124; 1 ք.մ</h6>
 									</div>
 									<div class="pricing-content">
 										<ul>
@@ -518,7 +569,7 @@
 										<h3><strong>Պրեմիում</strong> փաթեթ</h3>
 									</div>
 									<div class="pricing-terms">
-										<h6>6.500դր &#124; 1 ք.մ</h6>
+										<h6>7.800դր &#124; 1 ք.մ</h6>
 									</div>
 									<style>
 										#red {
@@ -530,7 +581,6 @@
 											color: green;
 											border: none;
 										}
-
 									</style>
 									<div class="pricing-content">
 										<ul>
@@ -554,7 +604,7 @@
 										<h3><strong>Գոլդ</strong> փաթեթ</h3>
 									</div>
 									<div class="pricing-terms">
-										<h6>8.800դր &#124; 1 ք.մ</h6>
+										<h6>10.560դր &#124; 1 ք.մ</h6>
 									</div>
 									<div class="pricing-content">
 										<ul>
@@ -774,7 +824,7 @@
 						<div class="widget">
 							<h5 class="widgetheading">Կապվեք</h5>
 
-							<strong>GDprinting Տպարան պատվերների գրանցման կայք</strong>
+							<strong>GOLDEN Առցանց տպարան</strong>
 
 							<p><i class="icon-phone"></i> (+374)96-965-874<br>
 								<i class="icon-envelope-alt"></i> golden.design01@mail.ru
@@ -782,9 +832,6 @@
 						</div>
 					</div>
 					<div class="span4">
-						<h4>Պատվիրեք առցանց խնայեք ժամանակ</h4>
-						<p><strong>Ողջույն հարգելի հաճախորդ,</strong> ուրախ ենք ձեզ տեղեկացնել առ այն, որ այսուհետ կարող եք առանց տպարան այցելելու 
-						օգտվել տպարանի ծառայություններից և ընդամենը <strong>10-15 վարկյանում</strong> կարող եք պատվիրել ծառայություն և ոչ միայն կարող եք գրանցվել նաև գրաֆիկական դիզայնի խորացված դասընթացների:</p>
 						<h5 class="widgetheading">Բաժանորդագրվեք մեզ</h5>
 						<p>Մուտքագրեք ձեր էլ. փոստը և բաժանորդագրվեք մեր տեղեկագրին:</p>
 
@@ -887,7 +934,7 @@
 
 	<!-- Template Custom JavaScript File -->
 	<script src="js/custom.js"></script>
-<!--
+	<!--
 	<script>
     window.addEventListener('contextmenu', function (e) {
         e.preventDefault();
