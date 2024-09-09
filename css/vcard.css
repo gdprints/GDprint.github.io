@@ -32,18 +32,18 @@ body {
 }
 
 .profile-image img {
-    width: 250px;
+    width: 200px;
     height: auto;
     
 }
 
 .name {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .title {
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 .social-icons{
 	display: flex;
@@ -59,8 +59,8 @@ body {
 /*	background-image: linear-gradient(#666666, #000);*/
 	background-color: #666666;
 	border-radius: 10px;
-	padding: 12px;
-	margin: 10px 8px;
+	padding: 8px;
+	margin: 8px 6px;
 	color: #fff;
 }
 
@@ -73,14 +73,14 @@ body {
 	margin: 0;
 }
 .social-icons i {
-    font-size: 1.5rem;
+    font-size: 1rem;
 	color: #fff;
-	margin: 0 15px;
+	margin: 0 10px;
 }
 
 .call-button {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 8px 16px;
 	background-color: ;
 	background-image: linear-gradient(#87C727, #517D10);
 	border: none;
@@ -99,7 +99,7 @@ body {
     background-color: transparent;
     color: #4CAF50;
     
-    font-size: 21px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
 }
@@ -126,7 +126,7 @@ body {
 }
 
 .language-selector ul li img {
-    width: 32px; /* Set the width of the flag images */
+    width: 28px; /* Set the width of the flag images */
     height: auto; /* Maintain aspect ratio */
 }
 
