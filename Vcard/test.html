@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Website with Audio Translation</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <!-- Language Selector Dropdown -->
+    <div class="language-selector">
+        <button onclick="toggleDropdown()">Select Language</button>
+        <ul class="dropdown" id="languageDropdown">
+            <li><a href="#" onclick="translatePage('en')"><img src="images/flag-en.png" alt="English"></a></li>
+            <li><a href="#" onclick="translatePage('hy')"><img src="images/flag-hy.png" alt="Armenian"></a></li>
+            <li><a href="#" onclick="translatePage('ru')"><img src="images/flag-ru.png" alt="Russian"></a></li>
+        </ul>
+        <!-- Audio Button -->
+        <button id="audioButton" onclick="playAudio()" disabled>Play Audio</button>
+    </div>
+
+    <!-- Website Content -->
+    <div class="content">
+        <h1 data-translate="title">Welcome to our Website!</h1>
+        <p data-translate="description">This is a multilingual website example.</p>
+        <p data-translate="content">We hope you enjoy browsing through our website. Feel free to switch languages!</p>
+    </div>
+
+    <!-- Audio Elements for Translations -->
+    <audio id="audio-en" src="audio/audio-en.mp3" preload="auto"></audio>
+    <audio id="audio-hy" src="audio/audio-hy.mp3" preload="auto"></audio>
+    <audio id="audio-ru" src="audio/voicedor.mp3" preload="auto"></audio>
+
+    <script>
+		const translations = {
+    en: {
+        title: "Welcome to our Website!",
+        description: "This is a multilingual website example.",
+        content: "We hope you enjoy browsing through our website. Feel free to switch languages!",
+    },
+    hy: {
+        title: "Բարի գալուստ մեր կայք!",
+        description: "Սա բազմալեզու կայքի օրինակ է:",
+        content: "Մենք հուսով ենք, որ դուք կվայելեք մեր կայքի թերթումը: Ազատ զգացեք փոխել լեզուն!",
+    },
+    ru: {
+        title: "Добро пожаловать на наш сайт!",
+        description: "Это пример многоязычного веб-сайта.",
+        content: "Мы надеемся, что вам понравится просматривать наш сайт. Не стесняйтесь переключать языки!",
+    },
+};
+
+// Store the currently selected language
+let selectedLanguage = 'en';
+
+// Function to toggle the visibility of the dropdown menu
+function toggleDropdown() {
+    const dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+// Function to translate the page based on the selected language
+function translatePage(language) {
+    const elementsToTranslate = document.querySelectorAll("[data-translate]");
+    
+    elementsToTranslate.forEach((element) => {
+        const key = element.getAttribute("data-translate");
+        element.textContent = translations[language][key];
+    });
+
+    selectedLanguage = language; // Update the selected language
+    document.getElementById("audioButton").disabled = false; // Enable the audio button
+    toggleDropdown(); // Close the dropdown after selecting a language
+}
+
+// Function to play audio translation based on the selected language
+function playAudio() {
+    const audioElements = {
+        en: document.getElementById("audio-en"),
+        hy: document.getElementById("audio-hy"),
+        ru: document.getElementById("audio-ru"),
+    };
+
+    // Pause all audios first
+    Object.values(audioElements).forEach(audio => audio.pause());
+
+    // Play the selected language audio
+    audioElements[selectedLanguage].play();
+}
+
+// Set default language on page load
+document.addEventListener("DOMContentLoaded", function() {
+    translatePage('en'); // Default to English
+});
+
+	</script>
+</body>
+</html>
