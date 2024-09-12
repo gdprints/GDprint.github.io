@@ -1,4 +1,6 @@
 * {
+	margin: 0;
+	padding: 0;
 	font-family: sans-serif;
 	font-weight: bold;
 	border: none;
@@ -20,6 +22,7 @@ body {
 	background-color: #fff;
 	border-radius: 15px;
 	max-width: 400px;
+	
 	width: 100%;
 	padding: 15px;
 	text-align: center;
@@ -102,6 +105,7 @@ body {
 
 .vcard-logo {
 	width: 100%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 }
@@ -109,7 +113,7 @@ body {
 .vcard-logo img {
 	width: 250px;
 	height: auto;
-	margin-bottom: 20px;
+	margin: 0 auto;
 }
 
 .vcard-name {
