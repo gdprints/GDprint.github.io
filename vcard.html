@@ -1,67 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+ <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Институт ДорПроект</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/vcard.css">
-	<link href="images/logo_icon.png" rel="icon">
-	<link href="images/logo_icon.png" rel="apple-touch-icon">
-</head>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>Digital Business Card</title>
+ 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+ 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/5.2.0/font/bootstrap-icons.min.css" rel="stylesheet">
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="gdvcard.css">
+ </head>
 
-<body>
-	 
-	<div s class="vcard card text-center">
-		<div class="profile-image mx-auto">
-			<img style="border: none;" src="images/logo_full-1.png" alt="Profile Photo" class=" img-thumbnail">
+ <body>
+ 	<div class="vcard-container">
+ 		<!-- Language Flags in the Upper Right Corner -->
+ 		<div class="language-selector">
+ 			<button onclick="toggleDropdown()"><i class="bi bi-translate"></i></button>
+ 			<ul class="dropdown" id="languageDropdown">
+ 				<li><a href="#" onclick="translatePage('en')"><img src="images/flag-en.png" alt="English"></a></li>
+ 				<li><a href="#" onclick="translatePage('hy')"><img src="images/flag-hy.png" alt="Armenian"></a></li>
+ 				<li><a href="#" onclick="translatePage('ru')"><img src="images/flag-ru.png" alt="Russian"></a></li>
+ 			</ul>
+ 		</div>
 
-	  <!-- Language Selector Dropdown -->
-    <div class="language-selector">
-        <button onclick="toggleDropdown()"><i style="font-size: 24px;" class="bi bi-translate"></i></button>
-        <ul class="dropdown" id="languageDropdown">
-            <li><a href="#" onclick="translatePage('en')"><img src="images/flag-en.png" alt="English"></a></li>
-            <li><a href="#" onclick="translatePage('hy')"><img src="images/flag-hy.png" alt="Armenian"></a></li>
-            <li><a href="#" onclick="translatePage('ru')"><img src="images/flag-ru.png" alt="Russian"></a></li>
-        </ul>
-    </div>
-		</div>
-		<h2 data-translate="title" class="name mt-3">Davit Kartashyan</h2>
-		<p data-translate="description" class="title text-muted">Chieft Executive Officer</p>
-    <button data-translate="content" id="audioButton" class="btn btn-primary mt-4 call-button " onclick="playAudio()" disabled>Hear about us</button>
-  
-		<div class="social-icons mt-3">
-			<a href="https://www.facebook.com/DorProjectInstitute/" class="text-dark mx-2"><i class="bi bi-facebook"></i><p> Facebook</p></a>
-			<a href="https://www.tiktok.com/@dorproject_institute" class="text-dark mx-2"><i class="bi bi-tiktok"></i><p> Tiktok</p></a>
-			<a href="https://www.linkedin.com/company/dorproject-institute-llc/" class="text-dark mx-2"><i class="bi bi-linkedin"></i><p> Linkedin</p></a>
-			<a href="https://www.instagram.com/dorprojectinstitute/" class="text-dark mx-2"><i class="bi bi-instagram"></i><p> Instagram</p></a>
-			
-		</div>
-		
-		<button data-translate="call" class="btn btn-primary mt-4 call-button " > <a style="color: white;  text-decoration: none;" href="tel:+37410757500">Call Me</a> </button>
-    <audio id="audio-en" src="audio/audio-en.mp3" preload="auto"></audio>
-    <audio id="audio-hy" src="audio/audio-hy.mp3" preload="auto"></audio>
-    <audio id="audio-ru" src="audio/audio-ru.mp3" preload="auto"></audio>
-		    
-	</div>
-	
+ 		<!-- Organization Logo -->
+ 		<div class="vcard-logo">
+ 			<img src="img/logo.png" alt="Organization Logo">
+ 		</div>
+ 		<!-- Employee Name -->
+ 		<div data-translate="vcard_name" class="vcard-name">Harutyun Chalikyan</div>
+ 		<!-- Employee Title -->
+ 		<div data-translate="vcard_info" style="display: flex; justify-content: center;" class="vcard-info">Director of an online printing house</div>
+
+ 		<!-- Buttons -->
+ 		<div class="vcard-button">
+ 			<button style="border: none; background-color: red;" data-translate="about_us" id="audioButton" class="btn btn-outline-secondary btn-sm" onclick="playAudio()" disabled>About Us</button>
+ 			
+<!-- 			<a href="tel:+37496965874"><button style="border: none; background-color: #C9CACA;" data-translate="vcard_tel" class="btn btn-primary btn-sm">Call Me</button></a>
+ 			
+ 			<a style="text-decoration: none; color: #000; font-weight: 500;" href="contact_us.html"> <button style="border: none; background-color: #C9CACA;" data-translate="Contact_us" class="btn btn-sm"> Contact us</button></a>-->
+ 			
+ 			<button style="border: none; background-color: red;" style="font-size: 11.3px;" data-translate="save" class="btn btn-success btn-sm" onclick="saveContact()">Save Contact</button>
+ 		</div>
+ 		
+ 		<div class="vcard-button-soc">
+ 			<a href="tg://resolve?domain=golden_design01"><button><i class="bi bi-telegram"></i></button></a>
+ 			<a href="https://wa.me/+37496965874"><button><i class="bi bi-whatsapp"></i></button></a>
+ 			<a href="viber://chat?number=+37496965874"><button><i class="fab fa-viber"></i></button></a>
+ 			<a href="tel:+37496965874"><button><i class="bi bi-telephone-fill"></i></button></a>
+ 		</div>
+ 		
+ 		<div class="social-icons">
+ 			<button class="btn btn-social mt-12 call-button"><a href="https://www.facebook.com/golden.design01">Facebook</a> </button>
+
+ 			<button class="btn btn-social mt-12 call-button"><a href="https://www.instagram.com/golden.design01">Instagram</a></button>
+
+ 			<button class="btn btn-social mt-12 call-button"><a data-translate="vcard_web" href="https://gdprint.github.io/">Website</a></button>
+
+ 			<button class="btn btn-social mt-12 call-button"><a data-translate="vcard_services" href="https://gdprint.github.io/services.html">Services</a></button>
+ 		</div>
+
+ 		<!-- Contact Information -->
+
+ 		<div style="display: flex; align-items: center;" class="vcard-info">
+ 			<button data-translate="vcard_copy" onclick="copyEmailText('emailText2')" style="margin-left: 0px; " class="vcard-email">Copy Email</button>
+ 			<a href="mailto:example2@example.com" id="emailText2" class="vcard-email">golden.design01@mail.ru</a>
+
+ 		</div>
 
 
+ 		<audio id="audio-en" src="audio/GDprinting-audio-en.mp3" preload="auto"></audio>
+ 		<audio id="audio-hy" src="audio/GDprinting-audio-hy.mp3" preload="auto"></audio>
+ 		<audio id="audio-ru" src="audio/GDprinting-audio-ru.mp3" preload="auto"></audio>
+ 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-	  <script>
-        function playAudio() {
-            // Get the audio element by ID
-            var audio = document.getElementById('audio');
-            
-            // Play the audio
-            audio.play();
-        }
-    </script>
 
-    <script src="js/translations.js"></script>
-</body>
+ 	<script>
+ 		function copyEmailText(elementId) {
+ 			// Get the text content of the anchor tag by its ID
+ 			var emailText = document.getElementById(elementId).textContent;
 
-</html>
+ 			// Use the Clipboard API to copy the text
+ 			navigator.clipboard.writeText(emailText).then(() => {
+ 				alert("Էլփոստի հասցեն պատճենված է clipboard-ում: " + emailText);
+ 			}).catch(err => {
+ 				console.error("Չհաջողվեց պատճենել տեքստը:", err);
+ 			});
+ 		}
+
+ 	</script>
+ 	<script>
+ 		function saveContact() {
+ 			const vCardData = `
+BEGIN:VCARD
+VERSION:3.0
+FN:GDprinting
+TEL;TYPE=CELL:+37496965874
+PHONE;TYPE=Phone:+37495818921
+EMAIL:golden.design01@mail.ru
+END:VCARD
+            `;
+
+ 			const blob = new Blob([vCardData], {
+ 				type: 'text/vcard'
+ 			});
+ 			const link = document.createElement('a');
+ 			link.href = URL.createObjectURL(blob);
+ 			link.download = 'contact.vcf';
+ 			link.click();
+ 		}
+
+ 	</script>
+
+ 	<script src="js/gdtranlation.js"></script>
+
+ </body>
+
+ </html>
