@@ -1,0 +1,245 @@
+* {
+	font-family: sans-serif;
+	font-weight: bold;
+	border: none;
+}
+
+body {
+	background-image: url(img/img.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.vcard-container {
+	background-color: #fff;
+	border-radius: 15px;
+	max-width: 400px;
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+/*translate page start2*/
+.language-selector {
+	position: absolute;
+	display: inline-block;
+	float: right;
+	margin-top: 5px;
+}
+
+.language-selector button {
+	background-color: transparent;
+	color: #000;
+	margin-top: 2px;
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+.language-selector ul {
+	list-style: none;
+	padding: 0;
+	margin-left: -36px;
+	top: 35px;
+	display: none;
+	position: absolute;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.language-selector ul li {
+	display: block;
+}
+
+.language-selector ul li a {
+	display: block;
+	padding: 0px;
+	text-decoration: none;
+}
+
+.language-selector ul li img {
+	width: 24px;
+	height: auto;
+}
+
+.language-selector ul li:hover {
+	background-color: whitesmoke;
+}
+
+
+/*translate page end2*/
+/*translate page start*/
+
+.language-selector {
+	position: relative;
+	top: 0px;
+	right: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.language-selector img {
+	width: 32px;
+	/* Size of the flag images */
+	height: auto;
+	cursor: pointer;
+	margin-left: 10px;
+	/* Spacing between flags */
+}
+
+/*translate page end*/
+
+
+.vcard-logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.vcard-logo img {
+	width: 250px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.vcard-name {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.social-icons .btn-social {
+	padding: 15px 10px;
+	margin: 10px 15px;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 10px;
+	background-color: #000;
+/*	background-image:linear-gradient(#000,red);*/
+}
+.social-icons .btn-social a {
+	text-decoration: none;
+	color: #fff;
+	width: 50%;
+}
+
+.vcard-info{
+	color: #000;
+	margin: 10px 15px;
+	display: grid;
+	justify-content: flex-start;
+	justify-content: space-between;
+}
+
+.vcard-info .vcard-email {
+	display: block;
+	margin: 0px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: red;
+/*	background-image:linear-gradient(#000,red);*/
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+.vcard-info .vcard-email {
+	border: none;
+}
+
+.vcard-button {
+	margin-top: 15px;
+	font-size: 14px;
+}
+.vcard-button-soc{
+	
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	margin: 5px;
+	background-color: transparent;
+	justify-content: space-around;
+}
+.vcard-button-soc a{
+	text-decoration: none;
+}
+.vcard-button-soc button{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	margin: 10px 10px;
+	padding: 0;
+	
+}
+.vcard-button-soc .bi-whatsapp,.bi-telephone-fill{
+	background-color: #72BE00;
+	border-radius: 50%;
+}
+.vcard-button-soc .bi-telegram{
+	background-color: #fff;
+	border-radius: 50%;
+	font-size: 50px;
+	color: #2CA4E0;
+}
+.vcard-button-soc .fa-viber{
+	background-color: #7360F2;
+	border-radius: 50%;
+}
+.vcard-button-soc .bi-whatsapp,.bi-telegram,.fa-viber,.bi-telephone-fill{
+	width: 50px;
+	height: 50px;
+	font-size: 28px;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	display: flex;
+	color: #fff;
+}
+.vcard-button button,
+.tel {
+	width: calc(100% / 2 - 20px);
+	padding: 10px 10px;
+	margin: 3px;
+	font-size: 14px;
+	list-style: none;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #000;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.vcard-button .tel {
+	border: none;
+	background-color: #fff;
+}
+
+.language-selector {
+	padding: 0px;
+	margin: 0px;
+}
