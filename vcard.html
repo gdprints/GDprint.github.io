@@ -42,7 +42,7 @@
  			
  			<a style="text-decoration: none; color: #000; font-weight: 500;" href="contact_us.html"> <button style="border: none; background-color: #C9CACA;" data-translate="Contact_us" class="btn btn-sm"> Contact us</button></a>-->
  			
- 			<button style="border: none; background-color: red;" style="font-size: 11.3px;" data-translate="save" class="btn btn-success btn-sm" onclick="saveContact()">Save Contact</button>
+ 			<a href="GDprinting.apk" download><button style="border: none; background-color: red;" style="font-size: 11.3px;" data-translate="save" class="btn btn-success btn-sm">Save Contact</button></a>
  		</div>
  		
  		<div class="vcard-button-soc">
@@ -70,7 +70,7 @@
 
  		</div>
 
-
+			<a ></a>
  		<audio id="audio-en" src="audio/GDprinting-audio-en.mp3" preload="auto"></audio>
  		<audio id="audio-hy" src="audio/GDprinting-audio-hy.mp3" preload="auto"></audio>
  		<audio id="audio-ru" src="audio/GDprinting-audio-ru.mp3" preload="auto"></audio>
@@ -91,28 +91,7 @@
  		}
 
  	</script>
- 	<script>
- 		function saveContact() {
- 			const vCardData = `
-BEGIN:saveContact
-VERSION:3.0
-FN:GDprinting
-TEL;TYPE=CELL:+37496965874
-PHONE;TYPE=Phone:+37495818921
-EMAIL:golden.design01@mail.ru
-END:Contact
-            `;
 
- 			const blob = new Blob([vCardData], {
- 				type: 'text/vcard'
- 			});
- 			const link = document.createElement('a');
- 			link.href = URL.createObjectURL(blob);
- 			link.download = 'contact.vcf';
- 			link.click();
- 		}
-
- 	</script>
 
  	<script src="js/gdtranlation.js"></script>
 
