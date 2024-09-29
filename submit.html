@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Love Card</title>
+</head>
+
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background: linear-gradient(135deg, #F400A1, #BA55D3);
+			font-family: 'Arial', sans-serif;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+
+		.card {
+			background: #ffffff;
+			border-radius: 15px;
+			padding: 18px;
+			text-align: center;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			position: relative;
+			overflow: hidden;
+		}
+
+		.emoji {
+			font-size: 100px;
+			transition: transform 0.5s ease;
+			color: #F400A1;
+		}
+
+		h1 {
+			margin: 20px 0;
+			color: #333;
+		}
+
+		p {
+			color: #000;
+			margin-bottom: 20px;
+			text-align: start;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		strong {
+			color: red;
+			font-size: 24px;
+			outline-width: medium;
+
+			text-align: center;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		button {
+			flex: 1;
+			margin: 0 10px;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #F400A1;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		button:hover {
+			background-color: #FF59C8;
+		}
+
+	</style>
+	<div class="container">
+		<div class="card">
+			<div style="font-size: 72px; color: #f400a1;" class="emoji" id="emoji"><svg xmlns="http://www.w3.org/2000/svg" width="172" height="172" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+</svg></div>
+			<p style=" font-family: monospace; font-size: 24px; text-align: center;">Ձեր պատասխանը<br> հաջողությամբ ուղարկվել է 
+			</p>
+			
+		</div>
+	</div>
+</body>
+
+</html>
