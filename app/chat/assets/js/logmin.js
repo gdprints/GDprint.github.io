@@ -13,7 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     if (username === correctUsername && password === correctPassword) {
         window.location.href = "hqwertotyuiopmasde.html";  // Redirect to desired page
     } else {
-        document.getElementById('error-message').innerText = "Incorrect username or password";
+        document.getElementById('error-message').innerText = "Սխալ օգտանուն կամ գաղտնաբառ";
         document.getElementById('error-message').style.display = 'block';
     }
 });
