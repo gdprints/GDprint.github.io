@@ -436,11 +436,11 @@
 							</div>
 							<div class="mb-3">
 								<label for="calendarType" class="form-label">Օրացույցի տիպ</label>
-								<select name="Օրացույցի տիպ" class="form-select" id="calendarType" required>
+								<select name="Օրացույցի տեսակը" class="form-select" id="calendarType" required>
 									<option name="Ընտրեք օրացույցի տիպը" selected disabled>Ընտրեք օրացույցի տիպը</option>
-									<option name="Սեղանի օրացույց" value="table">Սեղանի օրացույց</option>
-									<option name="Պատի օրացույց" value="wall">Պատի օրացույց</option>
-									<option name="Գրպանի օրացույց" value="pocket">Գրպանի օրացույց</option>
+									<option name="Օրացույցի տեսակը" value="Սեղանի օրացույց">Սեղանի օրացույց</option>
+									<option name="Օրացույցի տեսակը" value="Պատի օրացույց">Պատի օրացույց</option>
+									<option name="Օրացույցի տեսակը" value="Գրպանի օրացույց">Գրպանի օրացույց</option>
 								</select>
 							</div>
 							<div class="mb-3">
@@ -529,7 +529,7 @@
 							<input type="hidden" name="_captcha" value="false">
 							<input type="hidden" name="_autoresponse" value="Ձեր պատվերը հաջողությամբ գրանցվել է ">
 							<input type="hidden" name="_subject" value="Բաների տեղադրում">
-							<input type="hidden" name="_next" value="#">
+							<input type="hidden" name="_next" value="https://gdprint.github.io/services.html">
 						</form>
 					</div>
 				</div>
@@ -545,50 +545,50 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-						<form action="https://formsubmit.co/660dd97886433d138ad8015f38da42f1" method="POST" id="cupOrderForm">
+						<form action="https://formsubmit.co/660dd97886433d138ad8015f38da42f1" method="POST" >
 						
 							<div class="mb-3">
 								<label for="fullName" class="form-label">Անուն Ազգանուն</label>
-								<input type="text" class="form-control" id="fullName" placeholder="Մուտքագրեք ձեր անուն ազգանունը" required>
+								<input name="Անուն Ազգանուն" type="text" class="form-control" id="fullName" placeholder="Մուտքագրեք ձեր անուն ազգանունը" required>
 							</div>
 							
 							<div class="mb-3">
 								<label for="telNumber" class="form-label">Հեռախոսահամար</label>
-								<input type="tel" class="form-control" id="telNumber" placeholder="Մուտքագրեք ձեր հեռախոսահամարը" required>
+								<input name="Հեռախոսահամար" type="tel" class="form-control" id="telNumber" placeholder="Մուտքագրեք ձեր հեռախոսահամարը" required>
 							</div>
 							
 							<div class="mb-3">
 								<label for="email" class="form-label">Էլ․ հասցե</label>
-								<input type="email" class="form-control" id="email" placeholder="Մուտքագրեք ձեր էլ․ հասցեն" required>
+								<input name="Էլ․ հասցե" type="email" class="form-control" id="email" placeholder="Մուտքագրեք ձեր էլ․ հասցեն" required>
 							</div>
 							
 							<div class="mb-3">
 							 <label for="Sarph">Բաժակների քանակ:</label>
-                			 <input type="number" id="Sarph" class="form-control" placeholder="Մուտքագրեք բաժակների քանակը" oninput="SarphForms()" required>
+                			 <input name="Բաժակների քանակ" type="number" id="Sarph" class="form-control" placeholder="Մուտքագրեք բաժակների քանակը" oninput="SarphForms()" required>
                 			</div>
                 			
 							<div class="mb-3">
     							<label for="design">Տպագրության դիզայնի Ֆայլի Հղում:</label>
-                                <input type="url" class="form-control" id="fullName" placeholder="Մուտքագրեք Ֆայլի Հղում" required>
+                                <input name="Ֆայլի Հղում" type="url" class="form-control" id="fullName" placeholder="Մուտքագրեք Ֆայլի Հղում" required>
 							</div>
 							
 							<div class="mb-3">
 								<label for="orderDescription" class="form-label">Պատվերի նկարագրություն</label>
-								<textarea class="form-control" id="orderDescription" rows="3" placeholder="Մուտքագրեք պատվերի մանրամասները" required></textarea>
+								<textarea name="Պատվերի նկարագրություն" class="form-control" id="orderDescription" rows="3" placeholder="Մուտքագրեք պատվերի մանրամասները" required></textarea>
 							</div>
 
 								<div style="display: flex;
 								align-items: center; justify-content: space-between;" class="mb-3">
 								<button style="background-color: black; border: none;" type="submit" class="btn btn-primary">Պատվիրել</button>
 								<div class="result">
-									<p style="display: flex; justify-content: center; font-weight: bolder; color: #000; margin: 0px auto; align-items: center;" id="totalcupCost">Արժեքը: 0 AMD</p>
+									<p style="display: flex; justify-content: center; font-weight: bolder; color: #000; margin: 0px auto; align-items: center;" name="Արժեքը" id="totalcupCost">Արժեքը: 0 AMD</p>
 								</div>
 							</div>
 							<input type="hidden" name="_template" value="table">
 							<input type="hidden" name="_captcha" value="false">
 							<input type="hidden" name="_autoresponse" value="Ձեր պատվերը հաջողությամբ գրանցվել է ">
 							<input type="hidden" name="_subject" value="Բաժակի վրա տպագրություն">
-							<input type="hidden" name="_next" value="#">
+							<input type="hidden" name="_next" value="https://gdprint.github.io/services.html">
 						</form>
 					</div>
 				</div>
@@ -668,7 +668,7 @@
 					<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
 						<div class="service-item position-relative">
 							<div class="icon">
-								<i class="bi bi-cup"></i>
+								<i class="bi bi-calendar"></i>
 							</div>
 							<h3>Բաժակի վրա տպագրություն</h3>
 							<button style="background-color: black; border: none;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cupForm">Գրանցել պատվեր</button>
