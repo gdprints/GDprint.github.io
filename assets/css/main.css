@@ -187,6 +187,7 @@ h6 {
 	.header .topbar .contact-info i span {
 		font-size: 13px;
 	}
+
 }
 
 .header .topbar .contact-info i a {
@@ -243,6 +244,7 @@ h6 {
 	.navmenu {
 		padding: 0;
 	}
+
 
 	.navmenu ul {
 		margin: 0;
@@ -376,7 +378,9 @@ h6 {
 		transition: 0.3s;
 		z-index: 9998;
 	}
-
+	.navmenu ul>.language-dropdown{
+		margin-left: 15px;
+	}
 	.navmenu a,
 	.navmenu a:focus {
 		color: var(--nav-dropdown-color);
@@ -701,6 +705,7 @@ h6 {
 	[data-aos-delay] {
 		transition-delay: 0 !important;
 	}
+
 }
 
 /*--------------------------------------------------------------
@@ -758,6 +763,7 @@ section,
 	.section {
 		scroll-margin-top: 66px;
 	}
+	
 }
 
 /*--------------------------------------------------------------
@@ -816,6 +822,7 @@ section,
 	.hero .carousel {
 		min-height: 100vh;
 	}
+	
 }
 
 .hero img {
@@ -877,6 +884,7 @@ section,
 	.hero .carousel-item h2 {
 		font-size: 30px;
 	}
+	
 }
 
 .hero .carousel-item p {
@@ -889,6 +897,8 @@ section,
 	.hero p {
 		max-width: 60%;
 	}
+	
+	
 }
 
 .hero .btn-get-started {
@@ -965,6 +975,7 @@ section,
 	.hero .carousel-indicators li {
 		margin-bottom: 20px;
 	}
+	
 }
 
 .hero .featured {
@@ -980,6 +991,8 @@ section,
 	.hero .featured {
 		margin-top: 0;
 	}
+	
+
 }
 
 .hero .featured-item {
@@ -1418,6 +1431,8 @@ section,
 		font-size: 14px;
 		margin: 0 5px;
 	}
+	
+
 }
 
 .portfolio .portfolio-content {
@@ -1571,6 +1586,8 @@ section,
 		justify-content: center !important;
 		align-items: center !important;
 	}
+	
+
 }
 
 .team .team-member .pic {
@@ -1597,6 +1614,7 @@ section,
 		padding: 30px 0 0 0;
 		text-align: center;
 	}
+
 }
 
 .team .team-member h4 {
@@ -1628,6 +1646,8 @@ section,
 	.team .team-member span::after {
 		left: calc(50% - 25px);
 	}
+	
+
 }
 
 .team .team-member p {
@@ -1647,6 +1667,8 @@ section,
 	.team .team-member .social {
 		justify-content: center;
 	}
+	
+
 }
 
 .team .team-member .social a {
@@ -1825,6 +1847,8 @@ section,
 	.pricing .featured {
 		transform: scale(1.15);
 	}
+	
+
 }
 
 /*--------------------------------------------------------------
@@ -2338,6 +2362,8 @@ section,
 	.contact .php-email-form {
 		padding: 20px;
 	}
+	
+
 }
 
 .contact .php-email-form input[type=text],
@@ -2556,11 +2582,63 @@ section,
 	transition: transform 0.2s;
 }
 
-.order-image:hover {
-	transform: scale(1.05);
-}
-
 .modal-content img {
 	width: 100%;
 	height: auto;
+}
+
+/*Translate*/
+
+
+.language-dropdown {
+	position: relative;
+	display: inline-block;
+
+}
+
+.language-button {
+	border: none;
+	cursor: pointer;
+	background: none;
+}
+
+.language-button img {
+	width: 20px;
+	height: auto;
+
+}
+
+
+.language-menu {
+
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	min-width: 80px;
+	z-index: 10000;
+}
+
+.language-menu a {
+	color: black;
+	text-decoration: none;
+	padding: 10px 10px;
+	display: flex;
+	align-items: center;
+}
+
+.language-menu a img {
+	width: 20px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.language-menu a:hover {
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+.language-dropdown:hover .language-menu {
+	display: block;
 }
