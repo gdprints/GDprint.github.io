@@ -3,7 +3,7 @@ const orderData = {
 	"148025": {
 		title: "Պատվեր #148025 - Գովազդային պաստառի տպագրություն",
 		printingMaterial: "Banner",
-		orderStage: "Պատրաստման փուլում",
+		orderStage: "Հանձնված պատվեր",
 		customerData: {
 			name: "Տիգրան Դանելյան",
 			email: "tiko_danelyan@bk.ru",
@@ -11,7 +11,7 @@ const orderData = {
 		},
 		description: "Գովազդային պաստառ՝ Սև ֆոնով և կապույտ երանգներով պատկեր է, պարունակում է իր մեջ համակարգչային խաղերի լուսանկարններ առկա տեքստ (GAME ZONE) տառատեսակի անվանումը *PERFORMANCE* ",
 		images: [
-        "https://github.com/GDprint/GDprint.github.io/blob/Master/img/dummies/works/148.jpg?raw=true"
+        "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/148025.jpg?raw=true"
             ]
 	}
 };
