@@ -378,9 +378,11 @@ h6 {
 		transition: 0.3s;
 		z-index: 9998;
 	}
-	.navmenu ul>.language-dropdown{
+
+	.navmenu ul > .language-dropdown {
 		margin-left: 15px;
 	}
+
 	.navmenu a,
 	.navmenu a:focus {
 		color: var(--nav-dropdown-color);
@@ -763,7 +765,7 @@ section,
 	.section {
 		scroll-margin-top: 66px;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
@@ -822,7 +824,7 @@ section,
 	.hero .carousel {
 		min-height: 100vh;
 	}
-	
+
 }
 
 .hero img {
@@ -884,7 +886,7 @@ section,
 	.hero .carousel-item h2 {
 		font-size: 30px;
 	}
-	
+
 }
 
 .hero .carousel-item p {
@@ -897,8 +899,8 @@ section,
 	.hero p {
 		max-width: 60%;
 	}
-	
-	
+
+
 }
 
 .hero .btn-get-started {
@@ -975,7 +977,7 @@ section,
 	.hero .carousel-indicators li {
 		margin-bottom: 20px;
 	}
-	
+
 }
 
 .hero .featured {
@@ -991,7 +993,7 @@ section,
 	.hero .featured {
 		margin-top: 0;
 	}
-	
+
 
 }
 
@@ -1431,7 +1433,7 @@ section,
 		font-size: 14px;
 		margin: 0 5px;
 	}
-	
+
 
 }
 
@@ -1586,7 +1588,7 @@ section,
 		justify-content: center !important;
 		align-items: center !important;
 	}
-	
+
 
 }
 
@@ -1646,7 +1648,7 @@ section,
 	.team .team-member span::after {
 		left: calc(50% - 25px);
 	}
-	
+
 
 }
 
@@ -1667,7 +1669,7 @@ section,
 	.team .team-member .social {
 		justify-content: center;
 	}
-	
+
 
 }
 
@@ -1847,7 +1849,7 @@ section,
 	.pricing .featured {
 		transform: scale(1.15);
 	}
-	
+
 
 }
 
@@ -2362,7 +2364,7 @@ section,
 	.contact .php-email-form {
 		padding: 20px;
 	}
-	
+
 
 }
 
@@ -2644,6 +2646,8 @@ section,
 }
 
 
+
+
 /*businnes card*/
 
 
@@ -2711,4 +2715,3 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
-
