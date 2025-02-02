@@ -1287,6 +1287,15 @@
 	<script src="assets/js/order_am.js"></script>
 	<script src="assets/js/price_am.js"></script>
 	<script src="assets/js/Business_Card.js"></script>
+	<script>
+		document.querySelectorAll("p").forEach(paragraph => {
+			paragraph.innerHTML = paragraph.innerHTML.replace(/Design/g, "Տարբերակ");
+		});
+
+		document.querySelectorAll('[data-design-name]').forEach(element => {
+    		element.dataset.designName = element.dataset.designName.replace(/Design/g, 'Տարբերակ');
+		});
+	</script>
 </body>
 
 </html>
