@@ -23,9 +23,9 @@ const orderData = {
 			email: "goharav88@mail.ru",
 			phone: "077900940"
 		},
-		description: "Գովազդային պաստառ՝ նպատակը հողամասը հանձնել վարձակալության կամ վաճառել: Կարմիր ֆոնով պատկեր է, պարունակում է իր մեջ տեքստ (Հողամասը տրվում է վարձով կամ վաճառվումէ              043508061 / 093239472) տառատեսակի անվանումը *ArTarumianMHarvats* ",
+		description: "Գովազդային պաստառ՝ նպատակը հողամասը հանձնել վարձակալության կամ վաճառել: Պարունակում է իր մեջ տեքստ (Հողամասը տրվում է վարձով կամ վաճառվում է 043508061 / 093239472) տառատեսակի անվանումը *ArTarumianMHarvats* ",
 		images: [
-        "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/148026.jpg?raw=true"
+        "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/148027.jpg?raw=true"
             ]
 	}
 };
