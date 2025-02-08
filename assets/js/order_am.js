@@ -13,6 +13,20 @@ const orderData = {
 		images: [
         "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/148025.jpg?raw=true"
             ]
+	},
+		"149026": {
+		title: "Պատվեր #149026 - Գովազդային պաստառի տպագրություն",
+		printingMaterial: "Banner օղակներով",
+		orderStage: "Գտնվում է մշակման փուլում",
+		customerData: {
+			name: "Գոհար",
+			email: "goharav88@mail.ru",
+			phone: "077900940"
+		},
+		description: "Գովազդային պաստառ՝ նպատակը հողամասը հանձնել վարձակալության կամ վաճառել: Կարմիր ֆոնով պատկեր է, պարունակում է իր մեջ տեքստ (Հողամասը տրվում է վարձով կամ վաճառվումէ              043508061 / 093239472) տառատեսակի անվանումը *ArTarumianMHarvats* ",
+		images: [
+        "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/148026.jpg?raw=true"
+            ]
 	}
 };
 
