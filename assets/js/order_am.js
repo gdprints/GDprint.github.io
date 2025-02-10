@@ -17,7 +17,7 @@ const orderData = {
 		"149026": {
 		title: "Պատվեր #149026 - Գովազդային պաստառի տպագրություն",
 		printingMaterial: "Banner օղակներով",
-		orderStage: "Գտնվում է մշակման փուլում",
+		orderStage: "Կատարվում է տպագրական և հետ տպագրական աշխատանքներ",
 		customerData: {
 			name: "Գոհար",
 			email: "goharav88@mail.ru",
