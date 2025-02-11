@@ -27,6 +27,20 @@ const orderData = {
 		images: [
         "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/149026.jpg?raw=true"
             ]
+	},
+		"149027": {
+		title: "Պատվեր #149027 - Այցեքարտերի տպագրություն",
+		printingMaterial: "Այցեքարտերի տպագրություն",
+		orderStage: "Պատվերը պատրաստ է դիտարկման",
+		customerData: {
+			name: "Անահիտ Վարդանյան",
+//			email: "goharav88@mail.ru",
+			phone: "+37477790893"
+		},
+		description: "Այցեքարտի տպագրություն նախատեսված կոնտակտային տվյալների փոխանցման համար: Տպաքանակը 1-5 օրինակ ",
+		images: [
+        "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/151857.jpg?raw=true"
+            ]
 	}
 };
 
