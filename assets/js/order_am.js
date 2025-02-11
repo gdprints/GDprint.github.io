@@ -25,7 +25,7 @@ const orderData = {
 		},
 		description: "Գովազդային պաստառ՝ նպատակը հողամասը հանձնել վարձակալության կամ վաճառել: Պարունակում է իր մեջ տեքստ (Հողամասը տրվում է վարձով կամ վաճառվում է 043508061 / 093239472) տառատեսակի անվանումը *ArTarumianMHarvats* ",
 		images: [
-        "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/148027.jpg?raw=true"
+        "https://github.com/GDprint/GDprint.github.io/blob/Master/assets/img/portfolio/149026.jpg?raw=true"
             ]
 	}
 };
