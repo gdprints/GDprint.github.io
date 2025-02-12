@@ -153,6 +153,12 @@
 								<input name="Լայնություն" type="number" min="0" step="0.01" class="form-control" id="width" required>
 							</div>
 							<div class="mb-3">
+            						<label for="fontSelect" class="form-label">Ընտրեք Տառատեսակ</label>
+            							<select name="Ընտրեք Տառատեսակ" id="fontSelect" class="fontSelect form-select">
+                							<option name="Տառատեսակ" value="" selected disabled>Ընտրեք տառատեսակ</option>
+            							</select>
+        						</div>
+							<div class="mb-3">
 								<label for="servicePackage" class="form-label">Ծառայության փաթեթը</label>
 								<select name="Ծառայության փաթեթը" class="form-select" id="servicePackage" required>
 									<option name="Ծառայության փաթեթը" selected disabled value="Select Package">Ընտրեք Փաթեթ</option>
@@ -219,6 +225,12 @@
 								<input name="Լայնություն" type="number" class="form-control" id="width" required>
 							</div>
 							<div class="mb-3">
+            						<label for="fontSelect" class="form-label">Ընտրեք Տառատեսակ</label>
+            						<select name="Ընտրեք Տառատեսակ" id="fontSelect" class="fontSelect form-select">
+                					<option name="Տառատեսակ" value="" selected disabled>Ընտրեք տառատեսակ</option>
+            						</select>
+        						</div>
+							<div class="mb-3">
 								<label for="fileLink" class="form-label">Պատկեր/Ֆայլի հղում</label>
 								<input name="Ֆայլի հղում" type="url" class="form-control" id="fileLink" required>
 							</div>
@@ -264,6 +276,12 @@
 								<label for="quantity" class="form-label">Տպաքանակը</label>
 								<input name="Տպաքանակը" id="quantity" min="1000" value="1000" type="number" class="form-control" required>
 							</div>
+							<div class="mb-3">
+            						<label for="fontSelect" class="form-label">Ընտրեք Տառատեսակ</label>
+            						<select name="Ընտրեք Տառատեսակ" id="fontSelect" class="fontSelect form-select">
+                					<option name="Տառատեսակ" value="" selected disabled>Ընտրեք տառատեսակ</option>
+            						</select>
+        						</div>
 							<div class="mb-3">
 								<label for="paperType" class="form-label">Թղտի տեսակը</label>
 								<select name="Թղտի տեսակը" class="form-select" id="paperType" required>
@@ -889,6 +907,12 @@
 								<input name="Էլ․ հասցե" type="email" class="form-control" id="email" placeholder="Մուտքագրեք ձեր էլ․ հասցեն" required>
 							</div>
 							<div class="mb-3">
+							<div class="mb-3">
+            							<label for="fontSelect" class="form-label">Ընտրեք Տառատեսակ</label>
+            							<select name="Ընտրեք Տառատեսակ" id="fontSelect" class="fontSelect form-select">
+                							<option name="Տառատեսակ" value="" selected disabled>Ընտրեք տառատեսակ</option>
+            							</select>
+        							</div>
 								<label for="calendarType" class="form-label">Օրացույցի տիպ</label>
 								<select name="Օրացույցի տեսակը" class="form-select" id="calendarType" required>
 									<option name="Ընտրեք օրացույցի տիպը" selected disabled>Ընտրեք օրացույցի տիպը</option>
@@ -1287,6 +1311,7 @@
 	<script src="assets/js/order_am.js"></script>
 	<script src="assets/js/price_am.js"></script>
 	<script src="assets/js/Business_Card.js"></script>
+	<script src="assets/js/selectfontjs.js"></script>
 	<script>
 		document.querySelectorAll("p").forEach(paragraph => {
 			paragraph.innerHTML = paragraph.innerHTML.replace(/Design/g, "Տարբերակ");
