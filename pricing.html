@@ -453,7 +453,65 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/translate.js"></script>
+	<script>
+		window.addEventListener('contextmenu', function(e) {
+			e.preventDefault();
+		});
+	</script>
+	
+    <div class="modal fade" id="accessModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 style="font-size: 24px; color: white; font-weight: bolder;" class="modal-title" id="modalLabel">Access Restriction</h5>
+                </div>
+                <div style="font-size: 20px; color: black; font-weight: bolder; " class="modal-body">
+                    Sorry, access to this site is not allowed in your country.
+                    
+                        
+                </div>
+                <div style="display: flex; justify-content: space-between;" class="modal-footer">
+                   
+                    <p style=" color: red; font-weight: bolder; font-size: 14px;">The site is only available in certain countries.</p>
+                    <button type="button" class="btn btn-secondary" onclick="closeWindow()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+	<script>
+
+        const allowedCountries = ["AM"];
+        async function checkAccess() {
+            try {
+                const response = await fetch("https://ipinfo.io/46.36.116.209/json?token=b7d1ce3554c287");
+                const data = await response.json();
+                const userCountry = data.country;
+
+                console.log("Ձեր երկիրը:", userCountry);
+
+                if (!allowedCountries.includes(userCountry)) {
+                 
+                    const modal = new bootstrap.Modal(document.getElementById('accessModal'));
+                    modal.show();
+                }
+            } catch (error) {
+                console.error("Սխալ IP ստուգման ժամանակ:", error);
+            }
+        }
+
+        function closeWindow() {
+            window.close();
+        }
+
+
+        window.onload = checkAccess;
+
+
+   
+</script>
+ 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+ 	
 </body>
 
 </html>
